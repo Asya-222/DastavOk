@@ -1,0 +1,38 @@
+<div max-width-500 margin-auto>
+    <!-- Authentication card start -->
+   
+    <form class="md-float-material form-material loginForm" [formGroup]="addToppingForm" margin-auto>
+       
+      <div class="auth-box card" style="padding: 30px;">
+        <div class="card-block">
+          <div margin-bottom-25>
+            <div>
+              <h3 class="text-center txt-primary" project-color-green *ngIf = "data.name == 'editTopping'">Edit topping</h3>
+              <h3 class="text-center txt-primary" project-color-green *ngIf = "data.name == 'addTopping' || data.name == 'addToppingNew'">Add topping</h3>
+            </div>
+            <span class="text-danger" *ngIf = "errMessage">{{errMessage}}</span>
+          </div>
+
+          <div class="form-group form-primary">
+            <mat-form-field width-percent-100>
+              <input type="text" matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+          </div>
+          <div class="form-group form-primary">
+            <mat-form-field width-percent-100>
+              <input  matInput width-percent-100 formControlName="stepPrice" placeholder="Step Price" OnlyNumber = "true">
+            </mat-form-field>
+          </div>
+         <loading [loading] = "loading"></loading>
+         
+          <div class="col-md-12" display-flex width-percent-100>
+            <input [disabled]="!addToppingForm.valid" type="submit" class="btn btn-primary btn-md btn-block waves-light text-center m-b-20"
+               mdbRippleRadius value="add" style="width: 80%" margin-auto (click) = "add()">
+          </div>
+
+
+        </div>
+      </div>
+    </form>
+    
+  </div>

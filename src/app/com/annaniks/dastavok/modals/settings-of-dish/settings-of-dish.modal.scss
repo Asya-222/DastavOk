@@ -1,0 +1,21 @@
+.btn-primary {
+    background-color: #7db826;
+    border-color: #7db826;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #7db826c2;
+    border-color: #7db826c2;
+}
+.addDish{
+    border: 1px solid #8080805c;
+    padding: 20px 10px;
+    border-radius: 1%;
+
+}
+:host ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled).mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    background-color: #7db826;
+}
+:host ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #7db826;
+}

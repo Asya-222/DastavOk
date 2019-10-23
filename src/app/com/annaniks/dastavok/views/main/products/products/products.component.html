@@ -1,0 +1,48 @@
+<div position-relative>
+  <div class="createProduct" margin-top-40>
+    <div class="addProduct" (click)="addProduct()"></div>
+  </div>
+  <div *ngIf="!checkCountOfProducts">
+    <table width-percent-95 margin-top-10>
+      <tr background-green color-white style="height: 40px">
+        <th text-align-left>Name of dish</th>
+        <th>Price</th>
+        <th>View</th>
+        <th>IsActive</th>
+        <th>Settings</th>
+        <th>Hide</th>
+        <th>Delete</th>
+      </tr>
+      <tr *ngFor="let data of showDishes" [ngClass]="{'disable' : !data.isActive}">
+        <td>{{data.name}}</td>
+        <td>{{data.price}}</td>
+        <td text-align-center>
+          <i class="fas fa-eye view" color-grey-blue font-size-16 (click)="seeDetailsOfDish(data)"></i>
+        </td>
+        <td>
+          <mat-slide-toggle [ngClass]="{'disableToggle' : !data.isActive}" class="example-margin pointer-all" [color]="color" [checked]="data.isActive"
+            [disabled]="disabled" (click)="clickToggle(data)"></mat-slide-toggle>
+        </td>
+        <td text-align-center>
+          <i class="fas fa-cog settings" color-grey-blue font-size-16 (click)="editDatasOfTheDish(data)"></i>
+        </td>
+        <td text-align-center>
+          <i class="fas fa-eye-slash hide" font-size-16 color-grey-blue (click)="clickHide(data)"></i>
+        </td>
+        <td text-align-center>
+          <i class="fas fa-trash-alt delete" color-red font-size-15 (click)="deleteDish(data.id)"></i>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <div *ngIf="checkCountOfProducts" margin-top-15 width-percent-95>
+    <div display-flex>
+      <h3 margin-auto>{{checkCountOfProducts}}</h3>
+    </div>
+  </div>
+  <loading-full-screen [loading]="loading"></loading-full-screen>
+  <div width-percent-95>
+    <app-paginator [pageLength]="limit" [count]="countOfDishesForShow" (paginate)="paginate($event)"></app-paginator>
+  </div>
+</div>

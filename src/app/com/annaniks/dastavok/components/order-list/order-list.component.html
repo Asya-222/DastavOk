@@ -1,0 +1,8 @@
+
+<div width-percent-100>
+<ng-content></ng-content>
+<div width-percent-95  *ngIf = "paginatorVisiblity">
+    <app-paginator [pageLength]="pageLength" [count]="count" (paginate)="paginate($event)">
+    </app-paginator>
+</div>
+</div>

@@ -1,0 +1,28 @@
+.content{
+    .container{
+        p{
+            font-size: 20px;
+        }
+        input[type=submit]{
+            width: 70px;
+            color: white;
+            padding: 5px 0px;
+            margin: auto;
+            border: none;
+            cursor: pointer;
+        }
+        .buttons{
+            margin-top: 40px;
+            display: flex;
+            .confirm{
+                background-color: #87bd3c;
+                float: left;
+            }
+
+            .reject{
+                background-color: #dc3545;
+                float: right;
+            }
+        }
+    }
+}

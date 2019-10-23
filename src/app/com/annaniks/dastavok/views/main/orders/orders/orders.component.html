@@ -1,0 +1,15 @@
+<div position-relative>
+        <div class="orders">
+                <order-list [paginator]="true" [count]="countOfOrders" [pageLength]="limit" (paginate)="paginate($event)">
+                        <div class="row" width-percent-100>
+                                <orders-list-item display-flex *ngFor="let order of orderList" [infoAboutOrder]="order" padding-top-25 class="col-md-4 col-sm-12 col-lg-4 "></orders-list-item>
+                        </div>
+                </order-list>
+                <div *ngIf="messageForCheckOrdersList">
+                        <div display-flex>
+                                <h3 margin-auto>{{messageForCheckOrdersList}}</h3>
+                        </div>
+                </div>
+                <loading-full-screen [loading]="loading"></loading-full-screen>
+        </div>
+</div>

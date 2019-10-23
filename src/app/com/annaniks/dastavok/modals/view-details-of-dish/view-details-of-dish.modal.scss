@@ -1,0 +1,113 @@
+.viewDishInfo{
+    border: 1px solid #c7c7c7;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+    
+    .img{
+        height: 180px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+    }
+    .img:hover{
+        cursor: pointer;
+        transform: scale(1.025, 1.025);
+    }
+
+    .imgContainer{
+        height: fit-content;
+        
+       
+    }
+    .imgs{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80%;
+        width: 100%;
+        margin: auto;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+        
+    }
+    label{
+        font-size: 16px
+    }
+}
+.addTopping{
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2px 0px 8px 7px;
+    background-image: url('../../../../../../assets/images/add.png');
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+   .deleteIcon{
+        cursor: pointer;
+        color: #f5382a;
+        font-size: 14px;
+   }
+   .editIcon{
+        cursor: pointer;
+        color: #62b312;
+        font-size: 14px;
+   }
+   tr{
+       border: 1px solid #c7cccb;
+   }
+}
+
+td, th {
+    padding: 4px;
+    
+}
+.addTopping:hover{
+    cursor: pointer
+}
+.image-upload > input
+{
+    display: none;
+}
+label{
+    display:  block;
+    margin-bottom: 0px; 
+}
+.addImage{
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 2px 0px 8px 7px;
+    background-image: url('../../../../../../assets/images/add.png');
+}
+.addImage:hover{
+    cursor: pointer
+}
+.del{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    background-position: center;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/images/close.png);
+}
+.del:hover{
+    cursor: pointer
+}
+.imgStyle{
+    height: 80px;
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}

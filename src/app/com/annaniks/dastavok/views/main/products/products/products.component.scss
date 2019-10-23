@@ -1,0 +1,95 @@
+.createProduct{
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    .addProduct{
+    height: 45px;
+    width: 45px;
+    margin: auto;
+    background-image: url("../../../../../../../../assets/images/addProduct.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor:pointer;
+    }
+}
+.btn{
+    width: 95%;
+       button{
+        
+        width: 10%;
+        .add{
+            font-weight: bold;
+            font-size: 27px;
+        }
+    
+    }
+}
+.btn button:hover{
+    cursor: pointer
+}
+table{
+    border: 1px solid #7db826;
+    th,td{
+        text-align: center;
+        padding: 6px;
+
+    }
+    th{
+        font-weight: 600;
+    }
+    tr{
+        height: 52px
+    }
+
+}
+
+
+tr:nth-child(even) {
+    background-color: #ecefe8;
+}
+.view:hover{
+    cursor: pointer;
+    color: #4950578c
+}
+.settings:hover{
+    cursor: pointer;
+    color: #4950578c
+}
+.delete:hover{
+    cursor: pointer;
+    color: #dc354591;
+}
+.boxShadow{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3), 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+}
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.disableToggle{
+    opacity: 0.5;
+}
+.pointer-all{
+    pointer-events: all;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #7db826;
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: rgba(125, 184, 38, 0.47);
+}
+:host ::ng-deep .mat-slide-toggle-bar {
+  
+    width: 32px;
+    height: 12px;
+   
+}
+:host ::ng-deep .mat-slide-toggle-thumb {
+    height: 16px;
+    width: 16px;
+}
+.hide:hover{
+    cursor: pointer;
+    color: #4950578c
+}

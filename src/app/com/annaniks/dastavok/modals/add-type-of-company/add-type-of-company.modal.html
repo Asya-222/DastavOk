@@ -1,0 +1,11 @@
+<form [formGroup] = "typesForm">
+<mat-form-field width-percent-100>
+    <mat-select placeholder="Типы" formControlName="types" multiple>
+        <mat-option *ngFor="let type of typesList" [value]="type.id">{{type.name}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<div class="col-md-12" display-flex width-percent-100>
+        <input [disabled]="!typesForm.valid" type="submit" class="btn btn-primary btn-md btn-block waves-light text-center m-b-20"
+         (click) = "saveType()" mdbRippleRadius value="Сохранить" style="width: 50%" margin-auto>
+      </div>
+</form>

@@ -1,0 +1,66 @@
+.btn-primary {
+    background-color: #7db826;
+    border-color: #7db826;
+}
+#map{
+    width: 100%;
+    height: 200px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+   .deleteIcon{
+        cursor: pointer;
+        color: #f5382a;
+        font-size: 14px;
+   }
+   tr{
+       border: 1px solid #c7cccb;
+   }
+}
+
+td, th {
+    padding: 4px;
+    
+}
+.add{
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../../../../../../assets/images/add.png');
+}
+.add:hover{
+    cursor: pointer;
+    transform: scale(0.95, 0.95);
+}
+.companyTypes{
+    label{
+        color: #909090;
+        font-size: 12px;
+    }
+}.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #7db826c2;
+    border-color: #7db826c2;
+}
+.changePassword{
+    margin-bottom: 20px;
+    label{
+        color: #909090;
+        font-size: 12px;
+    }
+    button{
+        i{
+            color: #6aad07;
+        }
+    }
+    button:hover{
+        cursor: pointer
+    }
+}

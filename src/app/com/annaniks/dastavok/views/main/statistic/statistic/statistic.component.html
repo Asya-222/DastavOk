@@ -1,0 +1,14 @@
+<div position-relative>
+    <div class="filter_bar" style =" margin-top: 40px">
+        <p-calendar  placeholder="Выберите даты" [(ngModel)]="rangeDates" (ngModelChange)="onChangeRange($event)" selectionMode="range"
+            [readonlyInput]="true" [locale]="ru"></p-calendar>
+    </div>
+    <div  class="row"  style =" margin-top: 10px">
+        <p-chart type="line" [data]="ordersChartData" width="115%" height="300px" class="col-md-10 col-sm-10 col-lg-10"></p-chart>
+    </div>
+
+    <div style="margin-top: 40px" class="row">
+        <p-chart type="line" width="115%" height="300px" [data]="amountChartData" class="col-md-10 col-sm-10 col-lg-10"></p-chart>
+    </div>
+    <loading-full-screen [loading]="loading"></loading-full-screen>
+</div>

@@ -1,0 +1,14 @@
+:host ::ng-deep mat-spinner{
+    margin:auto;
+    svg{
+        width: 30px !important;
+            height: 30px !important;
+     circle {
+        stroke: grey !important;
+    }
+}}
+
+
+.loading{
+    margin-bottom: 15px;
+}

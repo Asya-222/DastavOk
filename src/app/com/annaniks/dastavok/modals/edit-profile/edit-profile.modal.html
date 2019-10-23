@@ -1,0 +1,75 @@
+<div margin-auto>
+  <!-- Authentication card start -->
+  <form class="md-float-material form-material loginForm" [formGroup]="editProfileForm"  margin-auto>
+    <div class="auth-box card" style="padding: 30px;">
+      <div class="card-block">
+        <div>
+          <div margin-bottom-25>
+            <h3 class="text-center txt-primary" project-color-green>Изменить профиль</h3>
+          </div>
+        </div>
+
+        <div class="form-primary">
+          <mat-form-field width-percent-100>
+            <input matInput formControlName="name" placeholder="Имя">
+          </mat-form-field>
+        </div>
+        <div class="form-primary">
+          <mat-form-field width-percent-100>
+            <input matInput formControlName="username" placeholder="Логин">
+          </mat-form-field>
+        </div>
+        <div class="form-primary">
+          <mat-form-field width-percent-100>
+            <input matInput formControlName="address" placeholder="Адрес">
+          </mat-form-field>
+          <div id="map"></div>
+        </div>
+        <div class=" form-primary">
+          <mat-form-field width-percent-100>
+            <input matInput formControlName="email" placeholder="Эл. почта">
+          </mat-form-field>
+        </div>
+        <div class="form-primary">
+          <mat-form-field width-percent-100>
+            <input matInput formControlName="code" placeholder="Почтовый индекс">
+          </mat-form-field>
+        </div>
+        <div class="companyTypes">
+          <label>Типы компании</label>
+          <div class="add" (click)="openAddTypeModal()"></div>
+          <table>
+            <tr *ngFor="let item of allTypes">
+              <td>{{item.typename}}</td>
+              <td text-align-center style=" width: 50px;">
+                <i class="fas fa-trash-alt deleteIcon" (click)="deleteType(item.companytypeid)"></i>
+              </td>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="changePassword">
+          <div display-grid>
+            <label>Изменить пароль</label>
+            <button (click) = "editPassword()">
+              <i class="fas fa-user-lock"></i>
+            </button>
+          </div>
+        </div>
+
+
+
+        <loading [loading]="loading"></loading>
+
+        <div class="col-md-12" display-flex width-percent-100>
+          <input [disabled]="!editProfileForm.valid" type="submit" class="btn btn-primary btn-md btn-block waves-light text-center m-b-20"
+            (click)="sendDatas()" mdbRippleRadius value="Сохранить" style="width: 40%" margin-auto>
+        </div>
+
+
+      </div>
+    </div>
+  </form>
+  <!-- end of form -->
+</div>

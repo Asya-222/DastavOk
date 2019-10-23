@@ -1,0 +1,32 @@
+table{
+    table-layout: fixed;
+    border-spacing: 0px;
+    border-collapse: inherit;
+    border: 1px solid #7db826;
+    th,td{
+        text-align: center;
+        padding: 6px;
+
+    }
+    th{
+        font-weight: 600;
+    }
+    tr{
+        height: 54px;
+    }
+
+}
+
+
+tr:nth-child(even) {
+    background-color: #ecefe8;
+}
+
+.hide:hover{
+    cursor: pointer;
+    color: #dc354591;
+}
+.view:hover{
+    cursor: pointer;
+    color: #4950578c
+}

@@ -1,0 +1,17 @@
+.paginator {
+    margin: 20px auto;
+    width: fit-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+    .page {
+        margin: 0 10px;
+        cursor: pointer;
+        user-select: none;
+    }
+    i {
+        user-select: none;
+    }
+    .active_page {
+        color: #87bd3c;
+    }
+}

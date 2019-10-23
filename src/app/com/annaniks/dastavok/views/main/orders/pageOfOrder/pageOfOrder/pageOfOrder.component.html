@@ -1,0 +1,83 @@
+<div width-percent-100 margin-top-40 position-relative>
+      <div width-percent-98 class="map">
+            <div id="map"></div>
+      </div>
+      
+      <div class="row orderGood" width-percent-96>
+            <div class=" col-md-6 col-sm-12 col-lg-4" padding-top-25 *ngFor="let item of orderGoods">
+                  <div class="hovereffect">
+                        <div class="img" [ngStyle]="{'background-image': 'url('+ baseUrl + 'static/company/' + item.thumbnail +')'}">
+                        </div>
+                        <div class="overlay">
+
+                              <div width-percent-100 class="cardOfInfoOfDish" display-block>
+                                    <div display-flex width-percent-100>
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Name:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <a font-size-14>{{item.name}}</a>
+                                          </div>
+                                    </div>
+                                    <div display-flex>
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Price:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <a font-size-14>{{item.price}}₽</a>
+                                          </div>
+                                    </div>
+                                    <div display-flex>
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Ready time:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <a font-size-14>{{item.readyTime}}</a>
+                                          </div>
+                                    </div>
+                                    <div display-flex *ngIf="item.isDeal">
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Discount:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <div style="display:flex">
+                                                      <i margin-auto project-color-green font-size-14 class="fas fa-check-circle"></i>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                                    <div display-flex *ngIf="!item.isDeal">
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Discount:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <div style="display:flex">
+                                                      <i margin-auto color-red font-size-14 class="fas fa-times-circle"></i>
+                                                </div>
+                                          </div>
+
+                                    </div>
+                                    <div display-flex>
+                                          <div display-block width-percent-50>
+                                                <label font-size-14 font-weight-bold>Toppings:</label>
+                                          </div>
+                                          <div display-block width-percent-50>
+                                                <div *ngFor="let topping of item.toppings">
+                                                      <span>{{topping.name}} - {{topping.stepPrice}}₽</span>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <loading-full-screen [loading] = "loading"></loading-full-screen>
+      <div class="nextStage" *ngIf="(orderStatus == 'start') || (orderStatus == 'accepted') || (orderStatus == 'maked') ">
+            <button (click)="openConfirmModalForChangeOrderPlace()" float-right color-white class="next">Send to next stage
+                  <i class="fas fa-forward" font-size-13></i>
+            </button>
+      </div>
+
+</div>

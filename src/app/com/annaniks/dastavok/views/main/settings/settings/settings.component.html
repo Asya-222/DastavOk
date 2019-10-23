@@ -1,0 +1,96 @@
+
+<div class="settingsPlace" *ngIf="profileInfo" position-relative>
+    <div padding-top-20>
+        <div display-flex class="top">
+            <div>
+                <h3 color-grey>Профиль</h3>
+            </div>
+            <div>
+                <button margin-0-5 background-green (click)="editProfile()">
+                    <i class="fas fa-user-edit"></i>
+                </button>
+            </div>
+        </div>
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Фото:</p>
+            </div>
+         
+            <div class="image-upload">
+                <label position-relative for="file-input">
+                    <div [ngStyle]="{'background-image':'url('+localImage+')'}" class="imgs" title="change">
+                    </div>
+                </label>
+                <input id="file-input" type="file" (change)="photoUpload($event)" />
+            </div>
+        </div>
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Имя пользователя:</p>
+            </div>
+            <div width-percent-40 display-flex>
+                <p margin-auto width-percent-100>{{profileInfo.userName}}</p>
+            </div>
+
+        </div>
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Номер телефона:</p>
+            </div>
+            <div width-percent-40 display-flex>
+                <p margin-auto width-percent-100>{{profileInfo.phoneNumber}}</p>
+            </div>
+
+        </div>
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Электронная почта:</p>
+            </div>
+            <div width-percent-40 display-flex>
+                <p margin-auto width-percent-100>{{profileInfo.email}}</p>
+            </div>
+
+        </div>
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Адрес:</p>
+            </div>
+            <div width-percent-40 display-flex>
+                <p margin-auto width-percent-100>{{profileInfo.address.text}}</p>
+            </div>
+
+        </div>
+
+        <hr width-percent-95>
+    </div>
+    <div>
+        <div display-flex width-percent-95>
+            <div width-percent-35 display-flex>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Почтовый индекс:</p>
+            </div>
+            <div width-percent-40 display-flex>
+                <p margin-auto width-percent-100>{{profileInfo.zipCode}}</p>
+            </div>
+
+        </div>
+        <hr width-percent-95>
+    </div>
+    <loading-full-screen [loading] = "loading"></loading-full-screen>
+    <loading-full-screen [loading] = "loading"></loading-full-screen>
+
+</div>

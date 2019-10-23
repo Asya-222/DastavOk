@@ -1,0 +1,9 @@
+
+    <div class="hovereffect">
+        <div class="img" [ngStyle]="{'background-image': 'url('+ baseUrl + 'static/company/' + infoAboutOrder?.goods[0]?.thumbnail +')'}">
+        </div>
+        <div class="overlay">
+            <h2>{{infoAboutOrder.name}}</h2>
+            <a class="info" (click)="onClickMore()">More</a>
+        </div>
+    </div>

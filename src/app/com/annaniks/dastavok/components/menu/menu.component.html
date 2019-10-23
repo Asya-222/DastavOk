@@ -1,0 +1,33 @@
+<div ><span project-color-green font-weight-bold style="font-size: 60px">LOGO</span></div>
+<div class="menu">
+    <div class="adminInfo">
+        <div class="image">
+            <div class="img" [ngStyle]="{'background-image':'url('+ mainService.getUserInfo()?.image +')'}"></div>
+        </div>
+        <div text-align-center width-percent-100 height-fit-content>
+            <p color-white class="companyName">{{mainService.getUserInfo()?.name}}</p>
+        </div>
+    </div>
+    <div class="menuItem" [routerLink]="item.routerLink" routerLinkActive="active" *ngFor="let item of menuItemsService.getMenuItems()">
+        <div class="item" display-flex>
+            <div padding-5>
+                <i color-white font-size-16  [class]="item.icon"></i>
+            </div>
+            <div padding-5>
+                <a color-white>{{item.label}}</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="menuItem" cursor-pointer >
+        <div class="item" display-flex (click) = "logOut()">
+            <div padding-5>
+                <i color-white font-size-16 class="fas fa-sign-out-alt"></i>
+            </div>
+            <div padding-5 >
+                <a color-white>Выйти</a>
+            </div>
+        </div>
+
+    </div>
+</div>

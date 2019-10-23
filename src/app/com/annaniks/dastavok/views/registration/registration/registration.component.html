@@ -1,0 +1,100 @@
+<section class="login-block background"  >
+  <!-- Container-fluid starts -->
+  <div class="container-fluid" display-initial>
+    <div>
+      <div max-width-500 margin-auto>
+        <!-- Authentication card start -->
+        <form class="md-float-material form-material loginForm" [formGroup]="regForm"  margin-auto>
+          <div class="auth-box card" style="padding: 30px;">
+            <div class="card-block">
+              <div>
+                <div>
+                  <h3 class="text-center txt-primary" color-white>Registration</h3>
+                </div>
+                <div text-align-center padding-10>
+                  <span class="text-danger" *ngIf="errorMessage">{{errorMessage}}</span>
+                </div>
+              </div>
+              <div class=" form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="name" placeholder="Name">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('name').hasError('required') && regForm.get('name').touched">Name required</span>
+              </div>
+              <div class=" form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="username" placeholder="Username">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('username').hasError('required') && regForm.get('username').touched">Username required</span>
+              </div>
+              <div class=" form-primary">
+                
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="address" placeholder="Address">
+                </mat-form-field>
+                <div id="map"></div>
+                <span class="text-danger" *ngIf="regForm.get('address').hasError('required') && regForm.get('address').touched">Address required</span>
+               
+              </div>
+              <div class=" form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="email" placeholder="E-mail">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('email').hasError('required') && regForm.get('email').touched">E-mail required</span>
+                <span class="text-danger" *ngIf="regForm.get('email').hasError('pattern') && regForm.get('email').touched">E-mail not valid.</span>
+              </div>
+              <div class="form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="phoneNum" placeholder="Phone number">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('phoneNum').hasError('required') && regForm.get('phoneNum').touched">Phone number required</span>
+              </div>
+              <div class="form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput placeholder="Password" formControlName="password" type="password">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('password').hasError('required') && regForm.get('password').touched">Password required</span>
+                <span class="text-danger" *ngIf="regForm.get('password').hasError('minlength') && regForm.get('password').touched">Password must be at least 5 characters long.</span>
+                <span class="text-danger" *ngIf="regForm.get('password').hasError('maxlength') && regForm.get('password').touched">Password cannot exceed 15 characters.</span>
+              </div>
+              <div class="form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="zipCode" placeholder="Code">
+                </mat-form-field>
+                <span class="text-danger" *ngIf="regForm.get('zipCode').hasError('required') && regForm.get('zipCode').touched">Zip code required</span>
+                <span class="text-danger" *ngIf="regForm.get('zipCode').hasError('minlength') && regForm.get('zipCode').touched">Zip code must be 4 characters.</span>
+                <span class="text-danger" *ngIf="regForm.get('zipCode').hasError('maxlength') && regForm.get('zipCode').touched">Zip code must be 4 characters.</span>
+              </div>
+              <div class=" form-primary">
+                <mat-form-field width-percent-100>
+                  <input matInput formControlName="compType" placeholder="Company type">
+                </mat-form-field>
+              </div>
+              <div class="companyType">
+                <mat-form-field width-percent-100>
+                  <mat-select placeholder="Types" formControlName="types" multiple>
+                    <mat-option *ngFor="let type of companyTypes" [value]="type.id">{{type.name}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <loading [loading]="loading"></loading>
+              <div class="col-md-12" display-flex width-percent-100>
+                <input [disabled]="!regForm.valid" type="submit" class="btn button btn-primary btn-md btn-block waves-light text-center m-b-20"
+                  (click)="sendDatasForRegister()" mdbRippleRadius value="Enter" style="width: 80%" margin-auto>
+              </div>
+              <div padding-top-20 width-percent-95>
+                  <p class="f-w-600 text-right" color-white>Back to
+                      <a [routerLink]="['/login']" color-white font-weight-600 font-size-15>Login.</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- end of form -->
+      </div>
+      <!-- Authentication card end -->
+    </div>
+    <!-- end of col-sm-12 -->
+  </div>
+  <!-- end of container-fluid -->
+</section>

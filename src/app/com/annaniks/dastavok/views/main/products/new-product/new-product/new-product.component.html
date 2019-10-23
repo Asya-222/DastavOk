@@ -1,0 +1,93 @@
+<div width-percent-95 class="addDish">
+    <form class="md-float-material form-material" [formGroup]="addProductForm" width-percent-100 margin-auto padding-0-50>
+      
+        <div class="card-block">
+            <div>
+                <div margin-bottom-25>
+                    <h3 class="text-center txt-primary" project-color-green>Add dish</h3>
+                </div>
+            </div>
+            <div display-flex>
+             <span margin-auto class="text-danger" *ngIf = "errorMessage">{{errorMessage}}</span>
+            </div>
+            <div class="form-group">
+                <label font-weight-bold project-color-green>Main photo of dish:</label>
+                <div>
+                    <img [ngStyle]="{'background-image': 'url('+ localImage +')'}" class="img">
+                </div>
+                <input type="file" style="cursor: pointer" formControlName="chooseImg" (change)="photoUpload($event)">
+
+            </div>
+            <div class="form-group">
+                <label font-weight-bold project-color-green>Other photos of dish:</label>
+                <div display-flex>
+                    <product-photos [item]="img" [index]="i" *ngFor="let img of localImages; let i = index" (changeEvent)="changedImage($event)"
+                        (deleteEvent)="deleteChoosingPhoto($event)"></product-photos>
+                </div>
+
+                <input type="file" style="cursor: pointer" formControlName="chooseImgs" multiple='multiple' (change)="multiTypeUpload($event)">
+
+            </div>
+            <div class="form-primary">
+                <mat-form-field width-percent-100>
+                    <input matInput formControlName="name" placeholder="Name of dish">
+                </mat-form-field>
+            </div>
+            <div class="form-primary">
+                <mat-form-field width-percent-100>
+                    <input  matInput formControlName="price" placeholder="Price" OnlyNumber = "true">
+                </mat-form-field>
+            </div>
+
+            <div class="DishTypeId">
+                <mat-form-field width-percent-100>
+                    <mat-select placeholder="Type of dish" formControlName="dishTypeId">
+                        <mat-option *ngFor="let type of dishTypes" [value]="type.id">{{type.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="form-group form-primary">
+                <mat-form-field width-percent-100>
+                    <input  matInput formControlName="readTime" placeholder="Duration of cooking" OnlyNumber = "true">
+                </mat-form-field>
+            </div>
+
+
+            <div class="form-primary">
+                <mat-form-field width-percent-100>
+                    <textarea rows="2" cols="50" matInput width-percent-100 formControlName="description" placeholder="Description"> </textarea>
+                </mat-form-field>
+            </div>
+            <div display-flex width-percent-100>
+                <input (click)="forAddTopping()" type="submit" class="btn btn-primary btn-md btn-block waves-light text-center m-b-20" mdbRippleRadius
+                    value="+ topping" style="width: 20%">
+            </div>
+            <div width-percent-98 margin-top-20 margin-left-10>
+                <table>
+                    <tr *ngFor="let topping of toppings">
+                        <td>{{topping.name}}</td>
+                        <td>{{topping.stepPrice}}₽</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="form-group form-primary" margin-top-20 margin-left-10>
+            <div>
+                <mat-checkbox formControlName="isDeal">With discount</mat-checkbox>
+            </div>
+        </div>
+    </form>
+    <div  class="col-md-12" display-flex width-percent-100 display-flex>
+        <div width-percent-50 display-flex>
+            <input type="submit" class="btn btn-primary btn-md  waves-light text-center m-b-20" mdbRippleRadius value="Cancel" width-percent-70
+                margin-10-auto margin-auto (click)="cancel()">
+        </div>
+        <div width-percent-50 display-flex>
+            <input (click)="addNewDish()" type="submit" class="btn btn-primary btn-md waves-light text-center m-b-20" mdbRippleRadius
+                value="Save" width-percent-70 margin-10-auto margin-auto>
+        </div>
+
+    </div>
+    <!-- end of form -->
+</div>

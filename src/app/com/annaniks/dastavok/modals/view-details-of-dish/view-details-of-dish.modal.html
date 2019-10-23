@@ -1,0 +1,79 @@
+<div class="viewDishInfo" position-relative>
+    <div>
+        <h3 class="text-center txt-primary" project-color-green>{{data.item.name}}</h3>
+    </div>
+    <div *ngIf="data.item.thumbnail">
+        <div *ngIf="data.type === 'basket'" margin-top-15 width-percent-100 [ngStyle]="{'background-image': 'url('+ baseUrl + 'static/company/' + data.item.thumbnail +')'}"
+            class="img"></div>
+    </div>
+    <div *ngIf="data.item.thumbnail">
+        <div class="image-upload" *ngIf="data.type === 'product'" margin-top-15 width-percent-100>
+            <label position-relative for="file-input">
+                <div [ngStyle]="{'background-image': 'url( ' + localImage +')'}" class="img" title="change">
+                </div>
+            </label>
+            <input id="file-input" type="file" (change)="photoUpload($event)" />
+        </div>
+    </div>
+    <div display-flex margin-top-15>
+        <label project-color-green font-weight-bold>Date of creation:</label>
+        <div>
+            <span margin-left-10>{{createdAt}}</span>
+        </div>
+    </div>
+    <div display-flex>
+        <label project-color-green font-weight-bold>Description:</label>
+        <div style="max-width: calc(100% - 91px);">
+            <span style="display: block; word-wrap: break-word;" margin-left-10>{{data.item.description}}</span>
+        </div>
+    </div>
+    <div display-flex>
+        <label project-color-green font-weight-bold>Price:</label>
+        <div>
+            <span margin-left-10>{{data.item.price}}</span>
+        </div>
+    </div>
+    <div display-flex>
+        <label project-color-green font-weight-bold>Date of update:</label>
+        <div>
+            <span margin-left-10>{{updatedAt}}</span>
+        </div>
+    </div>
+    <div width-percent-100 margin-bottom-5>
+        <label project-color-green font-weight-bold>Images:</label>
+        <div class="image-upload" *ngIf="data.type === 'product'">
+            <label position-relative for="file-inp">
+                <div class="addImage"></div>
+            </label>
+            <input id="file-inp" type="file" multiple='multiple' (change)="multiTypeUpload($event)" />
+        </div>
+        <div style="height:fit-content;margin-left: 10px !important" class="row">
+            <div *ngFor="let itm of imagesOfDish;let i = index" class="col-lg-2 col-sm-2 col-md-2 imgStyle" display-flex>
+                <div [ngStyle]="{'background-image': 'url('+ baseUrl + 'static/company/' + itm +')'}" class="imgs" margin-auto position-relative>
+                    <div *ngIf="data.type === 'product'" class="del" position-absolute (click)="deleteChoosingPhoto(i)"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div width-percent-100 *ngIf="data.type === 'product'">
+        <label project-color-green font-weight-bold>Toppings:</label>
+        <div class="addTopping" (click)="addTopping()"></div>
+        <table>
+            <tr *ngFor="let item of toppingsOfThisDish">
+                <td style="padding-left: 40px">{{item.name}}</td>
+                <td style=" width: 50px;">{{item.stepPrice}}</td>
+                <td text-align-center style=" width: 50px;">
+                    <i class="fas fa-edit editIcon" (click)="editTopping(item.id)"></i>
+                </td>
+                <td text-align-center style=" width: 50px;">
+                    <i class="fas fa-trash-alt deleteIcon" (click)="deleteTopping(item.id)"></i>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- <loading-full-screen [loading]="loading"></loading-full-screen> -->
+
+</div>

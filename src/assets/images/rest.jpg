@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML><HEAD>
+<TITLE>Ресторан Атлант в Адлере - контакты, меню, адрес</TITLE><meta name='yandex-verification' content='5cb9f76a381fc57b' />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="viewport" content="width=device-fixed, maximum-scale=0.9, user-scalable=1">
+<META name="keywords" content="ресторан атлант адлер">
+<META name="description" content="Ресторан Атлант относится к одноименному отелю. Здесь предлагают блюда европейской и кавказской кухни, фирменные блюда от шеф-повара"><link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/img/icons/favicon-16x16.png" type="image/png">
+	<link rel="manifest" href="/img/icons/manifest.json">
+	<link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="canonical" href="https://azur.ru/adler/rest.php?view=1060"/>
+	<meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+<script src="/img/clearbox.js?dir=/img/clearbox" type="text/javascript"></script>
+<script src='/img/jquery-1.11.3.min.js' type='text/javascript'>
+</script><script src='/img/jquery-migrate-1.2.1.min.js' type='text/javascript'></script>
+<script src='/img/twiket/js/jquery.maskedinput.js?v2.1.1.1489769784' type='text/javascript'></script>
+<script src='/img/media-scripts.js?v2.1.1.1545739081' type='text/javascript'></script>
+<link rel='stylesheet' type="text/css" href="/img/azur.v2.css?v3.1.8.1545739081" />
+
+<link rel='stylesheet' type="text/css" href="/img/font-awesome.min.css" />
+<link rel='stylesheet' href=/img/leaflet-0.4.5/leaflet.css />
+<!--[if lte IE 8]>
+<link rel='stylesheet' href=/img/leaflet-0.4.5/leaflet.ie.css />
+<![endif]-->
+<link rel='stylesheet' href=/img/leaflet/distance.css />
+<script src=/img/leaflet-0.4.5/leaflet.js></script>
+<script src=/img/leaflet/Distance.js></script>
+<script src=/img/leaflet/leaflet.zoomfs.js></script>
+<style>
+#AzurMap { height: 500px; width: 100%; margin: 10px auto; text-align:left; }
+#AzurMap.leaflet-fullscreen { position: fixed; width: 50%; height: 100%; top: 0; right: 0; bottom: 0; left: 0; margin: 0; padding: 0; border: 0; }
+.leaflet-control-fullscreen { background-image: url(/img/leaflet/images/icon-fullscreen.png); margin-bottom: 5px; }
+</style><script src='https://api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU'></script>
+<script src=/img/leaflet/leaflet.Yandex.js></script>
+
+<script src='https://maps.google.com/maps/api/js?v=3.2&sensor=false'></script>
+<script src=/img/leaflet/leaflet.Google.js></script>
+
+</HEAD>
+<BODY bgcolor=#ffffff text=#333333 link=#333333 vlink=#333333 alink=#333333 topmargin=0 leftmargin=0 rightmargin=0 ><div class="mobmenu beforeactive"><a rel=nofollow href='javascript:;' class='close'></a><div class="mobmenu_regions"><div class='tmenu-region-text'>Регионы Azur.ru:</div><ul><li><a rel="nofollow" href='/krym/'>Крым</a><ul class="mobmenu_sub_towns"><li class="sub_name"><b>Восточный берег Крыма</b></li><li><a rel="nofollow" href='/kerch/'>Керчь и Героевское</a></li><li><a rel="nofollow" href='/schelkino/'>Щёлкино и Ленинский р-н</a></li><li><a rel="nofollow" href='/feodosia/'>Феодосия</a></li><li><a rel="nofollow" href='/primorskiy/'>Приморский и Береговое</a></li><li><a rel="nofollow" href='/ordjo/'>Орджоникидзе</a></li><li><a rel="nofollow" href='/koktebel/'>Коктебель</a></li><li><a rel="nofollow" href='/kurortnoe/'>Курортное</a></li><li><a rel="nofollow" href='/sudak/'>Судак</a></li><li><a rel="nofollow" href='/newsvet/'>Новый Свет</a></li><li><a rel="nofollow" href='/morskoe/'>Морское и Весёлое</a></li><li class="sub_name"><b>Южный берег Крыма</b></li><li><a rel="nofollow" href='/privetnoe/'>Приветное и Канака</a></li><li><a rel="nofollow" href='/rybachiye/'>Рыбачье</a></li><li><a rel="nofollow" href='/malorechka/'>Малореченское</a></li><li><a rel="nofollow" href='/alushta/'>Алушта</a></li><li><a rel="nofollow" href='/partenit/'>Партенит и Утёс</a></li><li><a rel="nofollow" href='/gurzuf/'>Гурзуф</a></li><li><a rel="nofollow" href='/yalta/'>Ялта</a></li><li><a rel="nofollow" href='/alupka/'>Алупка - Гаспра</a></li><li><a rel="nofollow" href='/simeiz/'>Симеиз</a></li><li><a rel="nofollow" href='/foros/'>Форос</a></li><li class="sub_name"><b>Западный берег Крыма</b></li><li><a rel="nofollow" href='/balaklava/'>Балаклава</a></li><li><a rel="nofollow" href='/sevastopol/'>Севастополь</a></li><li><a rel="nofollow" href='/peschanoe/'>Песчаное и Береговое</a></li><li><a rel="nofollow" href='/nikolaevka/'>Николаевка</a></li><li><a rel="nofollow" href='/saki/'>Саки и Новофёдоровка</a></li><li><a rel="nofollow" href='/evpatoriya/'>Евпатория и Заозёрное</a></li><li><a rel="nofollow" href='/mirnuy/'>Поповка и Штормовое</a></li><li><a rel="nofollow" href='/chernomor/'>Черноморский район</a></li></ul></li><li class="active"><a rel="nofollow" href='/bigsochi/'>Сочи</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/veseloe/'>Имеретинский курорт</a></li><li class="active"><a rel="nofollow" href='/adler/'>Адлер</a></li><li><a rel="nofollow" href='/hosta/'>Хоста и Кудепста</a></li><li><a rel="nofollow" href='/sochi/'>Сочи</a></li><li><a rel="nofollow" href='/dagomys/'>Дагомыс</a></li><li><a rel="nofollow" href='/loo/'>Лоо</a></li><li><a rel="nofollow" href='/vardane/'>Вардане</a></li><li><a rel="nofollow" href='/golovinka/'>Головинка - Чемитоквадже</a></li><li><a rel="nofollow" href='/yakornaya/'>Якорная Щель и Беранда</a></li><li><a rel="nofollow" href='/soloniki/'>Солоники и Волконка</a></li><li><a rel="nofollow" href='/lazarevsk/'>Лазаревское</a></li><li><a rel="nofollow" href='/ashe/'>Аше и Голубая Дача</a></li><li><a rel="nofollow" href='/vishnevka/'>Вишнёвка - Совет-Квадже</a></li></ul></li><li><a rel="nofollow" href='/tuapsinsky/'>Туапсе</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/inal/'>Бухта Инал</a></li><li><a rel="nofollow" href='/dgybga/'>Джубга</a></li><li><a rel="nofollow" href='/lermontovo/'>Лермонтово</a></li><li><a rel="nofollow" href='/newmih/'>Новомихайловский</a></li><li><a rel="nofollow" href='/olginka/'>Ольгинка</a></li><li><a rel="nofollow" href='/nebug/'>Небуг</a></li><li><a rel="nofollow" href='/agoi/'>Агой</a></li><li><a rel="nofollow" href='/tyapse/'>Туапсе</a></li><li><a rel="nofollow" href='/dederkoy/'>Дедеркой</a></li><li><a rel="nofollow" href='/shepsi/'>Шепси</a></li></ul></li><li><a rel="nofollow" href='/gelreg/'>Геленджик</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/kabardinka/'>Кабардинка</a></li><li><a rel="nofollow" href='/buhta/'>Голубая Бухта</a></li><li><a rel="nofollow" href='/gelendzhik/'>Геленджик</a></li><li><a rel="nofollow" href='/divnomorsk/'>Дивноморское</a></li><li><a rel="nofollow" href='/dzhanxot/'>Джанхот и Прасковеевка</a></li><li><a rel="nofollow" href='/betta/'>Бетта и Криница</a></li><li><a rel="nofollow" href='/arxipka/'>Архипо-Осиповка</a></li></ul></li><li><a rel="nofollow" href='/novoros/'>Новороссийск</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/abrau/'>Абрау-Дюрсо</a></li><li><a rel="nofollow" href='/ozereika/'>Южная Озереевка</a></li><li><a rel="nofollow" href='/balka/'>Широкая Балка</a></li><li><a rel="nofollow" href='/nvrsk/'>Новороссийск</a></li></ul></li><li><a rel="nofollow" href='/anapareg/'>Анапа</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/blago/'>Благовещенская</a></li><li><a rel="nofollow" href='/vitazevo/'>Витязево</a></li><li><a rel="nofollow" href='/dzhemete/'>Джемете</a></li><li><a rel="nofollow" href='/anapa/'>Анапа</a></li><li><a rel="nofollow" href='/sykko/'>Сукко</a></li><li><a rel="nofollow" href='/ytrish/'>Большой Утриш</a></li></ul></li><li><a rel="nofollow" href='/tamanreg/'>Тамань</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/temryuk/'>Темрюк</a></li><li><a rel="nofollow" href='/golubickay/'>Голубицкая</a></li><li><a rel="nofollow" href='/peresyp/'>Пересыпь</a></li><li><a rel="nofollow" href='/kuchugury/'>Кучугуры</a></li><li><a rel="nofollow" href='/ilich/'>Ильич</a></li><li><a rel="nofollow" href='/tamane/'>Тамань и Сенной</a></li><li><a rel="nofollow" href='/veselovka/'>Веселовка</a></li></ul></li><li><a rel="nofollow" href='/yeyskiy/'>Ейск</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/yeysk/'>Ейск</a></li><li><a rel="nofollow" href='/dolzhanskaya/'>Должанская</a></li><li><a rel="nofollow" href='/kamyshevatskaya/'>Камышеватская</a></li><li><a rel="nofollow" href='/yasenskaya/'>Ясенская Переправа</a></li></ul></li><li><a rel="nofollow" href='/abkhazia/'>Абхазия</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/tsandripsh/'>Цандрипш</a></li><li><a rel="nofollow" href='/gagra/'>Гагра</a></li><li><a rel="nofollow" href='/alahadzy/'>Алахадзы</a></li><li><a rel="nofollow" href='/picunda/'>Пицунда</a></li><li><a rel="nofollow" href='/gudauta/'>Гудаута</a></li><li><a rel="nofollow" href='/afon/'>Новый Афон</a></li><li><a rel="nofollow" href='/suhumi/'>Сухум</a></li><li><a rel="nofollow" href='/gulripsh/'>Гулрыпш</a></li><li><a rel="nofollow" href='/ochamchira/'>Очамчыра</a></li></ul></li><li><a rel="nofollow" href='/georgia/'>Грузия</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/anaklia/'>Анаклия</a></li><li><a rel="nofollow" href='/grigoleti/'>Григолети</a></li><li><a rel="nofollow" href='/ureki/'>Уреки</a></li><li><a rel="nofollow" href='/shekvetili/'>Шекветили и Капровани</a></li><li><a rel="nofollow" href='/kobuleti/'>Кобулети</a></li><li><a rel="nofollow" href='/chakvi/'>Чакви и Букнари</a></li><li><a rel="nofollow" href='/batumi/'>Батуми</a></li><li><a rel="nofollow" href='/gonio/'>Гонио и Квариати</a></li><li><a rel="nofollow" href='/sarpi/'>Сарпи</a></li></ul></li><li><a rel="nofollow" href='/bolgaria/'>Болгария</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/kavarna/'>Каварна</a></li><li><a rel="nofollow" href='/balchik/'>Балчик</a></li><li><a rel="nofollow" href='/albena/'>Албена и Кранево</a></li><li><a rel="nofollow" href='/goldensand/'>Золотые Пески</a></li><li><a rel="nofollow" href='/varna/'>Варна</a></li><li><a rel="nofollow" href='/byala/'>Бяла</a></li><li><a rel="nofollow" href='/obzor/'>Обзор</a></li><li><a rel="nofollow" href='/svetivlas/'>Святой Влас и Елените</a></li><li><a rel="nofollow" href='/suncoast/'>Солнечный Берег</a></li><li><a rel="nofollow" href='/nesebr/'>Несебр и Равда</a></li><li><a rel="nofollow" href='/pomorie/'>Поморие</a></li><li><a rel="nofollow" href='/burgas/'>Бургас</a></li><li><a rel="nofollow" href='/chernomore/'>Черноморец</a></li><li><a rel="nofollow" href='/sozopol/'>Созополь</a></li><li><a rel="nofollow" href='/primorsko/'>Приморско и Китен</a></li><li><a rel="nofollow" href='/tsarevo/'>Царево</a></li></ul></li><li><a rel="nofollow" href='/chernogoria/'>Черногория</a><ul class="mobmenu_sub_towns"><li><a rel="nofollow" href='/hercegnovi/'>Херцег-Нови</a></li><li><a rel="nofollow" href='/tivat/'>Тиват</a></li><li><a rel="nofollow" href='/kotor/'>Котор</a></li><li><a rel="nofollow" href='/risan/'>Рисан</a></li><li><a rel="nofollow" href='/budva/'>Будва</a></li><li><a rel="nofollow" href='/petrovac/'>Петровац</a></li><li><a rel="nofollow" href='/sutomore/'>Сутоморе</a></li><li><a rel="nofollow" href='/bar/'>Бар</a></li><li><a rel="nofollow" href='/ulcin/'>Ульцинь</a></li></ul></li></ul></div><div class="mobmenu_towns"></div></div><script>mobmenu();</script><TABLE border=0 cellspacing=0 cellpadding=0 width=100%>
+<TR><TD bgcolor=#dcf9f7 align=center><TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align=center class="media-width100p">
+<TR><TD><div style='margin-left:5px;' class='tmenu-conteiner'><div class="clearfix"><div class='media-show tmenu-click clearfix f_l'><div class="f_l"><a rel=nofollow href='javascript:;' class='land_i tmenu-toogle'></a></div><div class="f_l media-show"><a  href='/'><img src='/img/azur_logo.png' width="192" height="72" border='0'  alt="Azur.ru Отдых на море" title="Azur.ru Отдых на море" /></a></div><div class="f_l"><a  href='/adler/'>Адлер</a></div></div><div><div class='tmenu-c'><div class='tmenu-region-text media-show'>Регионы Azur.ru:</div><TABLE border=0 cellspacing=0 cellpadding=0 width=100% class='tmenu'>
+<TR><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Крыму' rel="nofollow" href='/krym/'>Крым</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Крым:</div><table border='0' cellspacing='0' cellpadding='0'>
+<tr><td valign='top'><b>Западный берег Крыма</b><a  rel="nofollow" href='/balaklava/'>Балаклава</a><a  rel="nofollow" href='/sevastopol/'>Севастополь</a><a  rel="nofollow" href='/peschanoe/'>Песчаное и Береговое</a><a  rel="nofollow" href='/nikolaevka/'>Николаевка</a><a  rel="nofollow" href='/saki/'>Саки и Новофёдоровка</a><a  rel="nofollow" href='/evpatoriya/'>Евпатория и Заозёрное</a><a  rel="nofollow" href='/mirnuy/'>Поповка и Штормовое</a><a  rel="nofollow" href='/chernomor/'>Черноморский район</a></td><td valign='top'><b>Южный берег Крыма</b><a  rel="nofollow" href='/privetnoe/'>Приветное и Канака</a><a  rel="nofollow" href='/rybachiye/'>Рыбачье</a><a  rel="nofollow" href='/malorechka/'>Малореченское</a><a  rel="nofollow" href='/alushta/'>Алушта</a><a  rel="nofollow" href='/partenit/'>Партенит и Утёс</a><a  rel="nofollow" href='/gurzuf/'>Гурзуф</a><a  rel="nofollow" href='/yalta/'>Ялта</a><a  rel="nofollow" href='/alupka/'>Алупка - Гаспра</a><a  rel="nofollow" href='/simeiz/'>Симеиз</a><a  rel="nofollow" href='/foros/'>Форос</a></td><td valign='top'><b>Восточный берег Крыма</b><a  rel="nofollow" href='/kerch/'>Керчь и Героевское</a><a  rel="nofollow" href='/schelkino/'>Щёлкино и Ленинский р-н</a><a  rel="nofollow" href='/feodosia/'>Феодосия</a><a  rel="nofollow" href='/primorskiy/'>Приморский и Береговое</a><a  rel="nofollow" href='/ordjo/'>Орджоникидзе</a><a  rel="nofollow" href='/koktebel/'>Коктебель</a><a  rel="nofollow" href='/kurortnoe/'>Курортное</a><a  rel="nofollow" href='/sudak/'>Судак</a><a  rel="nofollow" href='/newsvet/'>Новый Свет</a><a  rel="nofollow" href='/morskoe/'>Морское и Весёлое</a></td></tr></table>
+</div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left' class='cur'><a title='Отдых в Большом Сочи' rel="nofollow" href='/bigsochi/'>Сочи</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Сочи:</div><a  rel="nofollow" href='/veseloe/'>Имеретинский курорт</a><a  rel="nofollow" href='/adler/' class='cur'>Адлер</a><a  rel="nofollow" href='/hosta/'>Хоста и Кудепста</a><a  rel="nofollow" href='/sochi/'>Сочи</a><a  rel="nofollow" href='/dagomys/'>Дагомыс</a><a  rel="nofollow" href='/loo/'>Лоо</a><a  rel="nofollow" href='/vardane/'>Вардане</a><a  rel="nofollow" href='/golovinka/'>Головинка - Чемитоквадже</a><a  rel="nofollow" href='/yakornaya/'>Якорная Щель и Беранда</a><a  rel="nofollow" href='/soloniki/'>Солоники и Волконка</a><a  rel="nofollow" href='/lazarevsk/'>Лазаревское</a><a  rel="nofollow" href='/ashe/'>Аше и Голубая Дача</a><a  rel="nofollow" href='/vishnevka/'>Вишнёвка - Совет-Квадже</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Туапсинском районе' rel="nofollow" href='/tuapsinsky/'>Туапсе</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Туапсе:</div><a  rel="nofollow" href='/inal/'>Бухта Инал</a><a  rel="nofollow" href='/dgybga/'>Джубга</a><a  rel="nofollow" href='/lermontovo/'>Лермонтово</a><a  rel="nofollow" href='/newmih/'>Новомихайловский</a><a  rel="nofollow" href='/olginka/'>Ольгинка</a><a  rel="nofollow" href='/nebug/'>Небуг</a><a  rel="nofollow" href='/agoi/'>Агой</a><a  rel="nofollow" href='/tyapse/'>Туапсе</a><a  rel="nofollow" href='/dederkoy/'>Дедеркой</a><a  rel="nofollow" href='/shepsi/'>Шепси</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Большом Геленджике' rel="nofollow" href='/gelreg/'>Геленджик</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Геленджик:</div><a  rel="nofollow" href='/kabardinka/'>Кабардинка</a><a  rel="nofollow" href='/buhta/'>Голубая Бухта</a><a  rel="nofollow" href='/gelendzhik/'>Геленджик</a><a  rel="nofollow" href='/divnomorsk/'>Дивноморское</a><a  rel="nofollow" href='/dzhanxot/'>Джанхот и Прасковеевка</a><a  rel="nofollow" href='/betta/'>Бетта и Криница</a><a  rel="nofollow" href='/arxipka/'>Архипо-Осиповка</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Новороссийске и районе' rel="nofollow" href='/novoros/'>Новороссийск</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Новороссийск:</div><a  rel="nofollow" href='/abrau/'>Абрау-Дюрсо</a><a  rel="nofollow" href='/ozereika/'>Южная Озереевка</a><a  rel="nofollow" href='/balka/'>Широкая Балка</a><a  rel="nofollow" href='/nvrsk/'>Новороссийск</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых на курортах Анапы' rel="nofollow" href='/anapareg/'>Анапа</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Анапа:</div><a  rel="nofollow" href='/blago/'>Благовещенская</a><a  rel="nofollow" href='/vitazevo/'>Витязево</a><a  rel="nofollow" href='/dzhemete/'>Джемете</a><a  rel="nofollow" href='/anapa/'>Анапа</a><a  rel="nofollow" href='/sykko/'>Сукко</a><a  rel="nofollow" href='/ytrish/'>Большой Утриш</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых на Тамани' rel="nofollow" href='/tamanreg/'>Тамань</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Тамань:</div><a  rel="nofollow" href='/temryuk/'>Темрюк</a><a  rel="nofollow" href='/golubickay/'>Голубицкая</a><a  rel="nofollow" href='/peresyp/'>Пересыпь</a><a  rel="nofollow" href='/kuchugury/'>Кучугуры</a><a  rel="nofollow" href='/ilich/'>Ильич</a><a  rel="nofollow" href='/tamane/'>Тамань и Сенной</a><a  rel="nofollow" href='/veselovka/'>Веселовка</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Ейском районе' rel="nofollow" href='/yeyskiy/'>Ейск</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Ейск:</div><a  rel="nofollow" href='/yeysk/'>Ейск</a><a  rel="nofollow" href='/dolzhanskaya/'>Должанская</a><a  rel="nofollow" href='/kamyshevatskaya/'>Камышеватская</a><a  rel="nofollow" href='/yasenskaya/'>Ясенская Переправа</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Абхазии' rel="nofollow" href='/abkhazia/'>Абхазия</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Абхазия:</div><a  rel="nofollow" href='/tsandripsh/'>Цандрипш</a><a  rel="nofollow" href='/gagra/'>Гагра</a><a  rel="nofollow" href='/alahadzy/'>Алахадзы</a><a  rel="nofollow" href='/picunda/'>Пицунда</a><a  rel="nofollow" href='/gudauta/'>Гудаута</a><a  rel="nofollow" href='/afon/'>Новый Афон</a><a  rel="nofollow" href='/suhumi/'>Сухум</a><a  rel="nofollow" href='/gulripsh/'>Гулрыпш</a><a  rel="nofollow" href='/ochamchira/'>Очамчыра</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Грузии' rel="nofollow" href='/georgia/'>Грузия</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Грузия:</div><a  rel="nofollow" href='/anaklia/'>Анаклия</a><a  rel="nofollow" href='/grigoleti/'>Григолети</a><a  rel="nofollow" href='/ureki/'>Уреки</a><a  rel="nofollow" href='/shekvetili/'>Шекветили и Капровани</a><a  rel="nofollow" href='/kobuleti/'>Кобулети</a><a  rel="nofollow" href='/chakvi/'>Чакви и Букнари</a><a  rel="nofollow" href='/batumi/'>Батуми</a><a  rel="nofollow" href='/gonio/'>Гонио и Квариати</a><a  rel="nofollow" href='/sarpi/'>Сарпи</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Болгарии' rel="nofollow" href='/bolgaria/'>Болгария</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Болгария:</div><a  rel="nofollow" href='/kavarna/'>Каварна</a><a  rel="nofollow" href='/balchik/'>Балчик</a><a  rel="nofollow" href='/albena/'>Албена и Кранево</a><a  rel="nofollow" href='/goldensand/'>Золотые Пески</a><a  rel="nofollow" href='/varna/'>Варна</a><a  rel="nofollow" href='/byala/'>Бяла</a><a  rel="nofollow" href='/obzor/'>Обзор</a><a  rel="nofollow" href='/svetivlas/'>Святой Влас и Елените</a><a  rel="nofollow" href='/suncoast/'>Солнечный Берег</a><a  rel="nofollow" href='/nesebr/'>Несебр и Равда</a><a  rel="nofollow" href='/pomorie/'>Поморие</a><a  rel="nofollow" href='/burgas/'>Бургас</a><a  rel="nofollow" href='/chernomore/'>Черноморец</a><a  rel="nofollow" href='/sozopol/'>Созополь</a><a  rel="nofollow" href='/primorsko/'>Приморско и Китен</a><a  rel="nofollow" href='/tsarevo/'>Царево</a></div></div></TD><TH width=3 class='menu-sep'>&nbsp;</TH><TD nowrap width='1%' valign='top' align='left'><a title='Отдых в Черногории' rel="nofollow" href='/chernogoria/'>Черногория</a><div class='tmhover'></div><div class='sub_tmenu'><div><div class='tmenu-town-text media-show'>Города в регионе Черногория:</div><a  rel="nofollow" href='/hercegnovi/'>Херцег-Нови</a><a  rel="nofollow" href='/tivat/'>Тиват</a><a  rel="nofollow" href='/kotor/'>Котор</a><a  rel="nofollow" href='/risan/'>Рисан</a><a  rel="nofollow" href='/budva/'>Будва</a><a  rel="nofollow" href='/petrovac/'>Петровац</a><a  rel="nofollow" href='/sutomore/'>Сутоморе</a><a  rel="nofollow" href='/bar/'>Бар</a><a  rel="nofollow" href='/ulcin/'>Ульцинь</a></div></div></TD></TABLE>
+<div class='tmenu-close media-show'></div></div></div></td></tr></TABLE>
+</TABLE>
+<TABLE border=0 cellspacing=0 cellpadding=0 width=100%>
+<TR><TD background="/img/azur_bgtop.gif" class='media-logo' align=center><TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align=center class="media-width100p">
+<TR height=90><TD align=center width=200><div class="media-hidden"><A href='/index.php' class='logo-img'><img src='/img/azur_logo.png' width="192" height="72" border='0'  alt="Azur.ru Отдых на море" title="Azur.ru Отдых на море" /></A></div><div class='media-login media-reg'><a  href='control.php'>Вход</a></div></TD>
+<TD class='media-hidden' background="/img/azur_bgtop.gif"><TABLE border=0 cellspacing=0 cellpadding=0 width=100% height=100%>
+<TR><TR valign=bottom><TD><div class="clearfix row_form top_bar"><form action="https://azur.ru/adler/allsearch.php?rnd=5622" method="get" enctype="multipart/form-data" accept-charset="utf-8">
+<div class="clearfix search_box"><div class="w_90"><INPUT name=text   type="text" class="input" placeholder="Поиск по сайту"><input type=hidden name="searchid" value="2316271"  />
+<input type=hidden name="web" value="0"  />
+</div><div class="w_10"><INPUT type=submit value="" class='submit btn' type="submit"></div></div><div class="clearfix"><A href=/adler/>Отдых в Адлере:</a></div></form>
+</div></TD>
+<TD align='right' style='vertical-align: middle;'><div class='toptitle media-login-text'><a rel="nofollow" href='control.php'>Регистрация / Вход с паролем</a></div></TD>
+</TABLE>
+</TABLE>
+</TABLE>
+<TABLE border=0 cellspacing=0 cellpadding=0 width=100%>
+<TR><TD height=30 bgcolor=#2492bd align=center><TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align=center class="media-width100p">
+<TR><TD><TABLE border=0 cellspacing=0 cellpadding=0 width=100% class='cmenu'>
+<TR><TD nowrap width=1%><A href='db.php' title='Жилье в Адлере без посредников' class=topmenu>Подбор жилья</A>&nbsp;</TD>
+<TH>&nbsp;</TH>
+<TD nowrap width=1%><A href='guesthouses.php' title='Гостевые дома Адлера' class=topmenu>Гостевые дома</A>&nbsp;</TD>
+<TH>&nbsp;</TH>
+<TD nowrap width=1%><A href='hotels.php' title='Отели Адлера' class=topmenu>Отели</A>&nbsp;</TD>
+<TH>&nbsp;</TH>
+<TD nowrap width=1%><A href='flats.php' title='Квартиры Адлера' class=topmenu>Квартиры</A>&nbsp;</TD>
+<TH class='media-hidden'>&nbsp;</TH>
+<TD nowrap width=1% class='media-hidden'><A href='homes.php' title='Дома Адлера' class=topmenu>Дома</A>&nbsp;</TD>
+<TH class='media-hidden'>&nbsp;</TH>
+<TD nowrap width=1% class='media-hidden'><A href='rest.php' title='Развлечения Адлера' class=topmenu_current>Развлечения</A>&nbsp;</TD>
+<TH class='media-hidden'>&nbsp;</TH>
+<TD nowrap width=1% class='media-hidden'><A href='plyazhi.php' title='Пляжи Адлера' class=topmenu>Пляжи</A>&nbsp;</TD>
+<TH class='media-hidden'>&nbsp;</TH>
+<TD nowrap width=1% class='media-hidden'><A href='photo.php' title='Адлер фото' class=topmenu>Фото</A>&nbsp;</TD>
+<TH class='media-hidden'>&nbsp;</TH>
+<TD nowrap width=1% class='media-hidden'><A href='talks.php' title='Форум и отзывы о Адлере' class=topmenu>Форум</A>&nbsp;</TD>
+<TH class='display-none'>&nbsp;</TH>
+<TD nowrap width=1% class='media-show'><div class='etc-menu'>Ещё<div class='etc-submenu'><a  href='homes.php' class='media-show'>Дома</a><a  href='rest.php' class='media-show'>Развлечения</a><a  href='plyazhi.php' class='media-show'>Пляжи</a><a  href='photo.php' class='media-show'>Фото</a><a  href='talks.php' class='media-show'>Форум</a></div></div></TD>
+</TABLE>
+</div></TABLE>
+</TABLE>
+<TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align=center class="media-width100p">
+<TR><TD valign=top>
+<TABLE border=0 cellspacing=0 cellpadding=10 width=100%>
+<TR><TD valign=top>
+<!-- Open Graph -->
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="<A href=/adler/rest.php?grp=4>Кафе и рестораны Адлера</A>" />
+            <meta property="og:image" content="/data/news/1060.jpg" style="display: none;" />
+            <meta property="og:url" content="/adler/rest.php?view=1060" />
+            <meta property="og:description" content="Ресторан Атлант" />
+            <!-- //Open Graph --><div itemscope itemtype="http://schema.org/ImageObject" style="display:none;"><span itemprop="name">Развлечения в Адлере</span><img src="/data/news/1060.jpg" alt="Развлечения в Адлере" title="Развлечения в Адлере" itemprop="contentUrl" /></div><div class="breadcrumbs m-b"><a  href='/'>Отдых на море</a> / <a  href='/adler/'>Адлер</a> / <a  href='rest.php'>Развлечения в Адлере</a> / <a  href='/adler/rest.php?grp=4'>Кафе и рестораны</a></div><TABLE border=0 cellspacing=0 cellpadding=0 width=100%>
+<TR><td valign='top' class='stile4 page_left_col'><h1 style='color:#444444; margin-top:15px; margin-left:5px;'>Ресторан Атлант</h1><TABLE border=0 cellspacing=0 cellpadding=10 align='center'>
+<TR><TD><script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,odnoklassniki" data-yashareTheme="counter"></div></TD>
+</TR>
+</TABLE>
+<DIV style='margin-top:7px; margin-bottom:10px;'><TABLE border=0 cellspacing=0 cellpadding=5 width=100% align=center style='min-width:690px;' class='media-width100p'>
+<TR><TD><DIV align=justify><A href="/aimg/16/2016_0f482.jpg" target=_new rel=clearbox[gallery=,,type=image]  alt="Ресторан Атлант, Адлер" title="Ресторан Атлант, Адлер"><IMG src="/aimg/16/2016_0f482_th.jpg" width='219' height='146'  alt="Ресторан Атлант, Адлер" title="Ресторан Атлант, Адлер" hspace='10' vspace=3 border=0 align=left style='padding-left:0px; margin-left:0px;'></A><br>
+Ресторан "Атлант" относится к одноименному отелю. Здесь предлагают блюда европейской и кавказской кухни, фирменные блюда от шеф-повара, которые приятно удивляют разнообразием и отменным вкусом. Организуются банкеты, свадьбы, вечеринки.</DIV></TD></TR>
+<TR><TD><TABLE cellspacing=0 cellpadding=0 border=0 width=100%><TR><TD valign=top height=0></TD></TR>
+<TR><TD align=center><A href="/aimg/16/2016_b382f.jpg" target=_new rel=clearbox[gallery=,,type=image]  alt="ресторан атлант адлер" title="ресторан атлант адлер"><IMG src="/aimg/16/2016_b382f_th.jpg" width='219' height='146'  alt="ресторан атлант адлер" title="ресторан атлант адлер" hspace='0' vspace=3 border=0 ></A><A href="/aimg/16/2016_829f5.jpg" target=_new rel=clearbox[gallery=,,type=image]  alt="ресторан атлант сочи" title="ресторан атлант сочи"><IMG src="/aimg/16/2016_829f5_th.jpg" width='219' height='146'  alt="ресторан атлант сочи" title="ресторан атлант сочи" hspace='10' vspace=3 border=0 ></A><A href="/aimg/16/2016_72117.jpg" target=_new rel=clearbox[gallery=,,type=image]  alt="ресторан в аддлере" title="ресторан в аддлере"><IMG src="/aimg/16/2016_72117_th.jpg" width='219' height='146'  alt="ресторан в аддлере" title="ресторан в аддлере" hspace='0' vspace=3 border=0 ></A></TD></TR>
+</TABLE></TD></TR>
+<TR><TD><DIV align=center><h4>Адлер, ул. Ульянова, 14</h4>
+<b>+7 (918) 034-59-23</b></DIV></TD></TR>
+</TABLE>
+</div>
+<h3>Расположение на карте:</h3><div id='AzurMap' style='height:400px'></div><DIV margin:15px;> <p><div align=center>
+<div id="vk_comments"></div>
+<script type="text/javascript">
+window.onload = function () {
+  VK.Widgets.Comments("vk_comments", {redesign: 1, limit: 10, attach: "*"});
+}
+</script>
+</div></DIV>&nbsp;<TABLE border=0 cellspacing=0 cellpadding=10 align=center>
+<TR><TD class=title>Выскажите свое мнение!</TD>
+</TABLE>
+<TABLE border=0 cellspacing=0 cellpadding=3 width=90% align=center>
+<b>Что бы оставить запись, Вам необходимо <a href="http://azur.ru/control.php">зарегистрироваться на сайте</a><b>
+<p>&nbsp;<TR></TABLE>
+</td><td width='385' valign='top' class='media-hidden page_right_col'><div class='subbanners'><BR><div align=center><A rel=nofollow href="http://www.aquarium-adler.com/"><IMG src="/data/bb/adler/aquarium_389x345_newlogo.gif" width="389" height="345" alt="" title="" border=1></A></div>
+<br></div><div class='hotels-index-spec block-cnt-2'><div class="flats"><div class="index-special"><h2 class="title">Гостиницы для отдыха на море в Адлере</h2><div><a href='/adler/db.php?owner=8467' class='position-relative display-inline-block'  title="Гостевой дом Олимп, Адлер, ул. Просвещения, 165а"><IMG src="/o/67/8467/th/dsc07287.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=8467' title="Гостевой дом Олимп, Адлер, ул. Просвещения, 165а"><b>Гостевой дом "Олимп"</b><br />Адлер, ул. Просвещения, 165а</a></div></div></div><div><a href='/adler/db.php?owner=761' class='position-relative display-inline-block'  title="Частная гостиница АэроСтар, Адлер, ул. Аэрофлотская, 10"><IMG src="/o/61/761/th/0001.jpg" width="200" height="130" border=0><div class='owner-stars'><div class='star'><img src='/img/star.png' width='13' height='12' /></div></div></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=761' title="Частная гостиница АэроСтар, Адлер, ул. Аэрофлотская, 10"><b>Частная гостиница "АэроСтар"</b><br />Адлер, ул. Аэрофлотская, 10</a></div></div></div><div><a href='/adler/db.php?owner=5861' class='position-relative display-inline-block'  title="Гостевой дом Море Море, Адлер, ул. Просвещения, 146"><IMG src="/o/61/5861/th/dsc00713_1.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=5861' title="Гостевой дом Море Море, Адлер, ул. Просвещения, 146"><b>Гостевой дом "Море Море"</b><br />Адлер, ул. Просвещения, 146</a></div></div></div><div><a href='/adler/db.php?owner=1042' class='position-relative display-inline-block'  title="Гостевой дом Мартлен, Адлер, ул. Киевская, 22"><IMG src="/o/42/1042/th/dsc01837.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=1042' title="Гостевой дом Мартлен, Адлер, ул. Киевская, 22"><b>Гостевой дом "Мартлен"</b><br />Адлер, ул. Киевская, 22</a></div></div></div><div><a href='/adler/db.php?owner=8933' class='position-relative display-inline-block'  title="Гостевой дом На Демократической, Адлер, ул. Демократическая, 30"><IMG src="/o/33/8933/th/DSC01035_novyiy_razmer.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=8933' title="Гостевой дом На Демократической, Адлер, ул. Демократическая, 30"><b>Гостевой дом "На Демократической"</b><br />Адлер, ул. Демократическая, 30</a></div></div></div><div><a href='/adler/db.php?owner=19389' class='position-relative display-inline-block'  title="Гостевой дом Верона, Адлер, ул. Интернациональная, 2"><IMG src="/o/89/19389/th/srsrr.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=19389' title="Гостевой дом Верона, Адлер, ул. Интернациональная, 2"><b>Гостевой дом "Верона"</b><br />Адлер, ул. Интернациональная, 2</a></div></div></div><div><a href='/adler/db.php?owner=8986' class='position-relative display-inline-block'  title="Гостевой дом Светлана на Луговой, Адлер, ул. Луговая, 20"><IMG src="/o/86/8986/th/dsc07438.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=8986' title="Гостевой дом Светлана на Луговой, Адлер, ул. Луговая, 20"><b>Гостевой дом "Светлана на Луговой"</b><br />Адлер, ул. Луговая, 20</a></div></div></div><div><a href='/adler/db.php?owner=10040' class='position-relative display-inline-block'  title="Гостевой дом Лина, Адлер, ул. Мира, 34"><IMG src="/o/40/10040/th/dsc07421.jpg" width="200" height="130" border=0></a><div style="width:210px; margin:0px auto; margin-bottom:10px;"><div><a href='/adler/db.php?owner=10040' title="Гостевой дом Лина, Адлер, ул. Мира, 34"><b>Гостевой дом "Лина"</b><br />Адлер, ул. Мира, 34</a></div></div></div></div></div></div><br /><div class=title>Ближайшие курорты:</div><div class='alsotowns on_r'><div class="inner"><div><a  href='/veseloe/'><span>Имеретинский курорт </span><img src="/data/resizeimages/adler/aed529f548c9adb9a31a69b0451d38d2.jpg" width="222" height="144" title='Имеретинский курорт' alt='Имеретинский курорт' /></a></div><div><a  href='/hosta/'><span>Хоста и Кудепста </span><img src="/data/resizeimages/adler/03cb0ed201c1b21acafbc91796a8dd1b.jpg" width="222" height="144" title='Хоста и Кудепста' alt='Хоста и Кудепста' /></a></div><div><a  href='/tsandripsh/'><span>Цандрипш </span><img src="/data/resizeimages/adler/20e265b196daeb8838f4017dee9a2363.jpg" width="222" height="144" title='Цандрипш' alt='Цандрипш' /></a></div><div><a  href='/sochi/'><span>Сочи </span><img src="/data/resizeimages/adler/94754eb116e62cc74381898f2bae9eb2.jpg" width="222" height="144" title='Сочи' alt='Сочи' /></a></div></div></div><img src='/img/dot.gif' alt='' border='0' width='385' height='1' onfocus='this.blur()' class='dot dot-385-1' /></td></TR>
+</TABLE>
+<br /><div class='newsblocks-conteiner photosblock stile1'><div class='title'><a href="photo.php" title="Фото Адлера">Фотографии Адлера и окрестностей разных лет</a></div><div class='newsblocks clearfix w_fix'><div class='fix video'><a href='https://vimeo.com/46971517' data-fancybox rel="nofollow"><div id="vimeo_module"><div class="vimeo_module_title">Адлер</div><div class="vimeo_module_thumb"><img src="/data/resizeimages/adler/ac6f78f90007ba181ab263bb6a231727.jpg" width="389" height="229" title='Адлер' alt='Адлер' class="thumb1" /><img src="/data/resizeimages/adler/fbeb5befc436f2d389c9d4f744712aa2.jpg" width="460" height="272" title='Адлер' alt='Адлер' class="thumb2" /></div></div></a></div><div class="items"><div class="inner"><div><a  href='photo.php?grp=60' class='small'><img src="/data/newfotos1/th/59/105059.jpg" width="225" height="144" title='У моря' alt='У моря' /><div>Пляж Южный-2</div></a></div><div><a  href='photo.php?grp=35' class='small'><img src="/data/newfotos1/th/98/68298.jpg" width="225" height="144" title='Зима пришла в горы' alt='Зима пришла в горы' /><div>Зимний курорт</div></a></div><div><a  href='photo.php?grp=43' class='small'><img src="/data/newfotos1/th/17/100717.jpg" width="225" height="144" title='Интересный загар получится' alt='Интересный загар получится' /><div>Пляж Чайка</div></a></div><div><a  href='photo.php?grp=13' class='small'><img src="/data/newfotos1/th/12/96412.jpg" width="225" height="144" title='Набережная реки Мзымта' alt='Набережная реки Мзымта' /><div>Набережная</div></a></div><div><a  href='photo.php?grp=32' class='small'><img src="/data/newfotos1/th/2/4002.jpg" width="225" height="144" title='смотровая площадка по пути на вершину Ачишхо' alt='смотровая площадка по пути на вершину Ачишхо' /><div>Поездки в горы на УАЗ</div></a></div><div><a  href='photo.php?grp=25' class='small'><img src="/data/newfotos1/th/18/4218.jpg" width="225" height="144" title='Песни кришны' alt='Песни кришны' /><div>Южный рынок</div></a></div><div><a  href='photo.php?grp=1' class='small'><img src="/data/newfotos1/th/23/5523.jpg" width="225" height="144" title='Адлер 2006' alt='Адлер 2006' /><div>Фотографии курорта Адлер</div></a></div><div><a  href='photo.php?grp=42' class='small'><img src="/data/newfotos1/th/64/4964.jpg" width="225" height="144" title='Злая собака' alt='Злая собака' /><div>Интересные кадры</div></a></div></div></div></div></div><div class="banner_bottom"><br></div></TD></TR></TABLE>
+</TD></TR></TABLE>
+<BR clear=all>&nbsp;<BR>&nbsp;<TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align='center' class='media-width100p m-b'>
+<TR><TD class="t_c footer_socials"><a rel="nofollow" href='https://vk.com/azurru' class='soc'><img src='/img/social/s2.png' width="30" height="30" border='0' width="30" height="30" alt="ВКонтакте" /></a><a rel="nofollow" href='https://www.facebook.com/groups/azurru/' class='soc'><img src='/img/social/s6.png' width="30" height="30" border='0' width="30" height="30" alt="Facebook" /></a><a rel="nofollow" href='https://www.odnoklassniki.ru/azur.ru' class='soc'><img src='/img/social/s8.png' width="30" height="30" border='0' width="30" height="30" alt="Одноклассники" /></a><a rel="nofollow" href='https://plus.google.com/+azurru/posts' class='soc'><img src='/img/social/s12.png' width="30" height="30" border='0' width="30" height="30" alt="Google +" /></a><a rel="nofollow" href='https://www.youtube.com/channel/UCbyrjsTOGCMoknCFw5jttzA' class='soc'><img src='/img/social/s15.png' width="30" height="30" border='0' width="30" height="30" alt="YouTube" /></a><a rel="nofollow" href='https://t.me/YourAzur' class='soc'><img src='/img/social/s10.png' width="30" height="30" border='0' width="30" height="30" alt="Telegram" /></a><a rel="nofollow" href='https://www.instagram.com/azur.ru_official/' class='soc'><img src='/img/social/s1.png' width="30" height="30" border='0' width="30" height="30" alt="Instagram" /></a><a rel="nofollow" href='https://ru.pinterest.com/AzurRU23/pins/' class='soc'><img src='/img/social/s13_3.png' width="30" height="30" border='0' width="30" height="30" alt="Pinterest" /></a><a rel="nofollow" href='https://www.tumblr.com/login?redirect_to=%2Fblog%2Fruazur' class='soc'><img src='/img/social/s3.png' width="30" height="30" border='0' width="30" height="30" alt="Tumblr" /></a><a rel="nofollow" href='https://vimeo.com/azurru' class='soc'><img src='/img/social/s14.png' width="30" height="30" border='0' width="30" height="30" alt="Vimeo" /></a><a rel="nofollow" href='https://twitter.com/RuAzur?lang=ru' class='soc'><img src='/img/social/s4.png' width="30" height="30" border='0' width="30" height="30" alt="Twitter" /></a><a rel="nofollow" href='https://www.pscp.tv/AzurRu/follow' class='soc'><img src='/img/social/s11.png' width="30" height="30" border='0' width="30" height="30" alt="Periscope" /></a><br /></TD>
+</TR>
+</TABLE>
+<div class='line1'></div><div class='line2'></div><div class='footer_bg'><TABLE border=0 cellspacing=0 cellpadding=0 width=1200 align='center' class='media-width100p'>
+<TR><TD valign='top'><b>Copyright © 2003 — 2019 | <A href=/adler/>Адлер</A> | <A href=//azur.ru>Azur.ru — отдых на море без посредников</a></b>
+<p>
+Обращаем Ваше внимание: портал Azur.ru не является системой on-line бронирования.<br>
+Это сайт, на страницах которого владельцы жилья размещают свои предложения по аренде.<br>
+Вы можете самостоятельно связаться с владельцами всех гостевых домов, отелей, квартир и домов.
+<noindex>
+<p>
+<!-- Rating@Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=583974" rel="nofollow">
+<img src="//top-fwz1.mail.ru/counter?id=583974;t=361;l=1" 
+style="border:0;" height="18" width="88" alt="Рейтинг@Mail.ru" /></a>
+<!-- //Rating@Mail.ru logo --> <!--LiveInternet counter--><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t26.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'></a>")
+</script><!--/LiveInternet-->
+</noindex></TD>
+<TD valign='top' width='240' class='footer_menu'>&nbsp;</TD>
+<TD valign='top' class='footer_menu' width='240'><small><b>Отдых на морских курортах</b></small><A href="https://azur.ru/index.php?article=82" rel=nofollow>О проекте</A><A href="https://azur.ru/index.php?article=1703" rel=nofollow>Контакты</A><A href="https://azur.ru/rating.php" rel=nofollow>Рейтинг сайтов</A><A href="https://azur.ru/control.php" rel=nofollow>Регистрация / Вход</A><A href="https://azur.ru/control.php?action=addowner" rel=nofollow>Добавить предложение по жилью</A><A href="https://azur.ru/policy.php" rel=nofollow>Политика конфиденциальности</A><img src=/img/dot.gif width=240 height=1 class='dot-240-1' /></TD>
+</TR>
+</TABLE>
+</div><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"Azur.ru","url":"https:\/\/azur.ru","sameAs":["https:\/\/vk.com\/azurru","https:\/\/www.facebook.com\/groups\/azurru\/","https:\/\/www.odnoklassniki.ru\/azur.ru","https:\/\/plus.google.com\/+azurru\/posts","https:\/\/www.youtube.com\/channel\/UCbyrjsTOGCMoknCFw5jttzA","https:\/\/t.me\/YourAzur","https:\/\/www.instagram.com\/azur.ru_official\/","https:\/\/ru.pinterest.com\/AzurRU23\/pins\/","https:\/\/www.tumblr.com\/login?redirect_to=%2Fblog%2Fruazur","https:\/\/vimeo.com\/azurru","https:\/\/twitter.com\/RuAzur?lang=ru","https:\/\/www.pscp.tv\/AzurRu\/follow"]}</script><!-- -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter5935582 = new Ya.Metrika({ id:5935582, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/5935582?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "583974", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=583974;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+
+<script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t26.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='1' height='1'></a>")
+</script>
+
+</div></noscript>
+<script src='/img/jquery.pickmeup.min.js' type='text/javascript'></script>
+
+<link rel='stylesheet' type='text/css' href='/img/pickmeup.min.css' />
+<script> jQuery('.pickmeup_date').pickmeup({hide_on_select: true, calendars:3}); </script>
+
+<script>
+
+    var settings = {"provider":"osm"};
+
+	var map = new L.Map('AzurMap',{
+	scrollWheelZoom:false, 
+	center: new L.LatLng(43.42455, 39.91920), 
+	maxZoom: 20,
+	zoom: 16, 
+	zoomControl: false });
+	
+	var layers = {};
+    var primary;
+
+    var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    var yndx = new L.Yandex();
+    //var yndx = new L.TileLayer('http://vec02.maps.yandex.net/tiles?l=map&v=2.16.0&x={x}&y={y}&z={z}', {maxZoom:20});
+    var ggl2 = new L.Google('HYBRID', {detectRetina: true});
+    var ggl = new L.TileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',  {
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    if(settings.provider){
+        switch (settings.provider){
+            case 'osm':
+                primary = osm;
+                layers.OSM = osm;
+                layers.Yandex = yndx;
+                layers.Google = ggl;
+            break;
+
+            case 'yandex':
+                primary = yndx;
+                layers.Yandex = yndx;
+                layers.OSM = osm;
+                layers.Google = ggl;
+            break;
+
+            case 'google':
+                primary = ggl;
+                layers.Google = ggl;
+                layers.OSM = osm;
+                layers.Yandex = yndx;
+            break;
+        }
+    }else{
+        primary = osm;
+        layers.OSM = osm;
+        layers.Yandex = yndx;
+        layers.Google = ggl;
+    }
+    //
+    
+    //layers.GoogleHybrid = ggl2;
+    
+    layers.GoogleHybrid = ggl2;
+
+    map.addLayer(primary);
+
+    map.addControl(new L.Control.Layers(layers));
+    
+	//map.addControl(new L.Control.Layers({'Карта':azurmap, 'Спутник Bing':bing}, {}));
+var zoomFS = new L.Control.ZoomFS();
+map.addControl(zoomFS);
+
+	var marker = new L.Marker(new L.LatLng(43.42486, 39.91831));//, {icon: L.icon({iconUrl: '/img/leaflet/images/marker.png', iconSize: [25, 41], iconAnchor: [13, 41], popupAnchor: [0, -30]})});
+	map.addLayer(marker);
+	marker.bindPopup('Ресторан &quot;Атлант&quot;').openPopup();
+	var d = new L.Control.Distance({}); map.addControl(d);
+	map.addControl(new L.Control.Scale());
+	
+	var d_metrs = document.getElementById('distance_metrs') || {};
+	var d_cords = document.getElementById('distance_cords') || {};
+	if( d_cords.value ) addDistanceCords( d_cords.value, d_metrs.value );
+	function addDistanceCords(cords, metrs) {
+		if( cords ) {
+			metrs = metrs || 0;
+			var dc = new L.Polyline([], {editable: false});
+			
+			lls = cords.split(';');
+		
+			for (var i = 0; i < lls.length; i++) {
+				if( lls[i] ) ll = lls[i].split(',');
+				dc.addLatLng( new L.latLng(ll[1], ll[0]) );
+			}
+			dc.bindPopup('Растояние до моря '+ metrs +' м');
+			map.addControl(dc);
+		}
+	}
+	
+</script>
+</BODY></HTML>

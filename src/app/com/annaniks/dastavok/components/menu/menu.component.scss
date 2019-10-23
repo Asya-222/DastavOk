@@ -1,0 +1,61 @@
+.menu{
+    width: 250px;
+    background-color: #495057;
+    border-radius: 6px;
+    margin: 0px 40px 30px 0px;
+    height: 700px;
+}
+.menuItem{
+    width: 100%;
+    height: 40px;
+   
+}
+.menuItem:hover{
+    background-color: #7db826;
+    -webkit-transition: background-color 0.5s;
+    cursor: pointer
+}
+.menuItem:active{
+    background-color: #7db826;
+}
+.item{
+    height: 100%;
+    width: 80%;
+    border-bottom: 1px solid #9c9c9c;
+    margin: auto;
+    a{
+        color: #e4e4e4;
+        font-weight: bold;
+        font-size: 14px
+    }
+}
+
+.adminInfo{
+    width: 80%;
+    border-bottom: 1px solid #9c9c9c;
+    margin: auto;
+    .image{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        padding: 10px;
+        .img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: auto;
+            background-image: url('../../../../../../assets/images/hacatun.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            }
+}
+}
+.active{
+    background-color: #7db826 !important
+}
+.companyName{ 
+    margin-top: 10px;
+    margin-bottom: 12px;
+}

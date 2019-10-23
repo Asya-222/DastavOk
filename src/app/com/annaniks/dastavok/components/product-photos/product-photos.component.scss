@@ -1,0 +1,28 @@
+
+.imgs{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.del{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    background-position: center;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/images/close.png);
+}
+.del:hover{
+    cursor: pointer
+}
+.image-upload > input
+{
+    display: none;
+}
+.imgs:hover{
+    cursor: pointer
+}

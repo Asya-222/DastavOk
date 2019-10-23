@@ -1,0 +1,14 @@
+<h5 style="text-align:center" project-color-green>Enter the code</h5>
+<div>
+  <form class="confirmForm" [formGroup]="confirmForm">
+    <div class=" form-primary">
+      <mat-form-field width-percent-100>
+        <input matInput formControlName="code" placeholder="Code">
+      </mat-form-field>
+    </div>
+    <loading [loading]="loading"></loading>
+    <div class="btn" width-percent-100>
+      <input class="form-control button" type="submit" value="Confirm" (click)="onConfirmClick()" width-percent-50 margin-auto>
+    </div>
+  </form>
+</div>

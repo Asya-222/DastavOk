@@ -1,0 +1,58 @@
+<section class="login-block" display-flex height100vh>
+    <!-- Container-fluid starts -->
+    <div class="container-fluid" margin-auto>
+        <div>
+            <div max-width-500 margin-auto margin-top-10>
+                <!-- Authentication card start -->
+                <form class="md-float-material form-material loginForm" [formGroup]="loginForm">
+                    <div class="auth-box card" style="padding: 30px;">
+                        <div class="card-block">
+                            <div>
+                                <h3 class="text-center txt-primary" color-white>Log In</h3>
+                            </div>
+                            <div text-align-center padding-10>
+                                <span class="text-danger" *ngIf="errorMessage">{{errorMessage}}</span>
+                            </div>
+
+                            <div class="form-group form-primary">
+                                <mat-form-field width-percent-100 color-white>
+                                    <input matInput formControlName="username" placeholder="Username">
+                                </mat-form-field>
+                                <span class="text-danger" *ngIf="loginForm.get('username').hasError('required') && loginForm.get('username').touched">Username required</span>
+
+                            </div>
+
+                            <div class=" form-primary">
+                                <mat-form-field width-percent-100 color-white>
+                                    <input matInput placeholder="Password" formControlName="password" type="password">
+                                </mat-form-field>
+                                <span class="text-danger" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">Password required</span>
+                            </div>
+                            <div display-block>
+                                <div padding-bottom-20 class="text-right float-left" margin-left-15>
+                                    <a color-white [routerLink]="['/registration']" class="text-right" font-weight-600 font-size-15> Registration</a>
+                                </div>
+                                <div padding-bottom-20 class=" text-right float-right" margin-right-15>
+                                    <a color-white [routerLink]="['/forgot']" class="text-right " font-weight-600 font-size-15> Forgot password?</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <loading [loading]="loading"></loading>
+                        <div class="row m-t-30">
+                            <div class="col-md-12" display-flex>
+                                <input type="submit" [disabled]="!loginForm.valid" class="btn button btn-md btn-block waves-light text-center m-b-20" mdbRippleRadius
+                                    value="Log In" (click)="adminLogin()" width-percent-50 margin-auto>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <!-- end of form -->
+            </div>
+            <!-- Authentication card end -->
+        </div>
+        <!-- end of col-sm-12 -->
+    </div>
+    <!-- end of container-fluid -->
+</section>

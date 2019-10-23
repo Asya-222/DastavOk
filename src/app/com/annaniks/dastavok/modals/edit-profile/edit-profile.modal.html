@@ -11,32 +11,32 @@
 
         <div class="form-primary">
           <mat-form-field width-percent-100>
-            <input matInput formControlName="name" placeholder="Имя">
+            <input matInput formControlName="name" [placeholder]="'settings.name' | translate">
           </mat-form-field>
         </div>
         <div class="form-primary">
           <mat-form-field width-percent-100>
-            <input matInput formControlName="username" placeholder="Логин">
+            <input matInput formControlName="username" [placeholder]="'settings.username' | translate">
           </mat-form-field>
         </div>
         <div class="form-primary">
           <mat-form-field width-percent-100>
-            <input matInput formControlName="address" placeholder="Адрес">
+            <input matInput formControlName="address" [placeholder]="'settings.address' | translate">
           </mat-form-field>
           <div id="map"></div>
         </div>
         <div class=" form-primary">
           <mat-form-field width-percent-100>
-            <input matInput formControlName="email" placeholder="Эл. почта">
+            <input matInput formControlName="email" [placeholder]="'settings.e_mail' | translate">
           </mat-form-field>
         </div>
         <div class="form-primary">
           <mat-form-field width-percent-100>
-            <input matInput formControlName="code" placeholder="Почтовый индекс">
+            <input matInput formControlName="code" [placeholder]="'settings.zip_code' | translate">
           </mat-form-field>
         </div>
         <div class="companyTypes">
-          <label>Типы компании</label>
+          <label>{{"settings.company_types" | translate}}</label>
           <div class="add" (click)="openAddTypeModal()"></div>
           <table>
             <tr *ngFor="let item of allTypes">
@@ -51,7 +51,7 @@
 
         <div class="changePassword">
           <div display-grid>
-            <label>Изменить пароль</label>
+            <label>{{"settings.edit_password" | translate}}</label>
             <button (click) = "editPassword()">
               <i class="fas fa-user-lock"></i>
             </button>
@@ -64,7 +64,7 @@
 
         <div class="col-md-12" display-flex width-percent-100>
           <input [disabled]="!editProfileForm.valid" type="submit" class="btn btn-primary btn-md btn-block waves-light text-center m-b-20"
-            (click)="sendDatas()" mdbRippleRadius value="Сохранить" style="width: 40%" margin-auto>
+            (click)="sendDatas()" mdbRippleRadius [value]="'save' | translate" style="width: 40%" margin-auto>
         </div>
 
 

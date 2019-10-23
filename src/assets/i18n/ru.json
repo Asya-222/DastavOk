@@ -1,0 +1,87 @@
+{
+  "save": "Сохранить",
+  "edit": "Изменить",
+  "cancel": "Отмена",
+  "password": "Пароль",
+  "name": "Имя",
+  "price": "Цена",
+  "add": "Добавить",
+  "delete": "Удалить",
+  "logIn": "Логин",
+  "log_in":" Вход",
+  "required_field":"Это обязательное поле",
+  "description": "Oписание",
+  "edit_datas": "Изменить данные",
+  "restore": "Восстановить",
+  "there_is_nothing_there": "Здесь ничего нет",
+    "menu":{
+        "dashboard": "Доска",
+        "statistic":"Статистика",
+        "settings":"Настройки",
+        "products": "Продукты",
+        "orders": "Заказы",
+        "accepted_orders": "Принятые заказы",
+        "made_orders" : "Заказы в процессе",
+        "onway_orders": "Заказы в пути",
+        "archive" : "Архив",
+        "logOut": "Выйти"
+    },
+    "dashboard": {
+      "total_amount": "Итого",
+      "all_orders": "Все заказы",
+      "completed_orders": "Завершенные заказы"
+    },
+    "statistic": {
+        "calendar_placeholder": "Выберите даты",
+        "all_orders": "Все заказы",
+        "total_amount":"Итого"
+    },
+    "settings":{
+      "profile": "Профиль",
+      "name": "Имя",
+      "photo": "Фото",
+      "username": "Логин",
+      "phone_number": "Номер телефона",
+      "e_mail": "Эл. почта",
+      "address":"Адрес",
+      "zip_code": "Почтовый индекс",
+      "company_types": "Типы компании",
+      "edit_password": "Изменить пароль",
+      "passwordEditting": {
+        "current_password":"Текущий пароль",
+        "new_password": "Новый пароль",
+        "repeat_new_password": "Повторите новый пароль"
+      }
+    },
+    "products":{
+      "view": "Посмотреть",
+      "isActive": "Eсть наличии",
+      "setting": "Настройки",
+      "hide": "Скрывать",
+      "adding_product":{
+        "input_field_incorrectly": "Одно из полей введено неправильно или не заполнено",
+        "add_dish": "Добавить еду",
+        "main_photo_of_dish":"Главное фото еды",
+        "other_photos_of_dish": "Другие фото еды",
+        "name_of_dish": "Название еды",
+        "type_of_dish": "Тип еды",
+        "duration_of_cooking": "Срок приготовления",
+        "description": "Oписание",
+        "topping": "Добавить ингредиенты",
+        "with_discount":"Со скидкой"
+      }
+    },
+    "adding_topping": {
+      "edit_topping": "Редактировать ингредиент",
+      "add_topping" : "Добавить ингредиент",
+      "step_price": "Стоимость за единицу"
+    },
+    "viewing_details_of_dish":{
+       "date_of_creation": "Дата создания",
+       "date_of_update": "Дата обновления",
+       "images": "Картинки",
+       "toppings": "Ингредиенты"
+    }
+  
+  }
+  

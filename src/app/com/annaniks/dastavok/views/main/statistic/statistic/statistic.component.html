@@ -1,6 +1,6 @@
 <div position-relative>
     <div class="filter_bar" style =" margin-top: 40px">
-        <p-calendar  placeholder="Выберите даты" [(ngModel)]="rangeDates" (ngModelChange)="onChangeRange($event)" selectionMode="range"
+        <p-calendar  [placeholder]="'statistic.calendar_placeholder' | translate" [(ngModel)]="rangeDates" (ngModelChange)="onChangeRange($event)" selectionMode="range"
             [readonlyInput]="true" [locale]="ru"></p-calendar>
     </div>
     <div  class="row"  style =" margin-top: 10px">

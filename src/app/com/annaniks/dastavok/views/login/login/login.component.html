@@ -8,7 +8,7 @@
                     <div class="auth-box card" style="padding: 30px;">
                         <div class="card-block">
                             <div>
-                                <h3 class="text-center txt-primary" color-white>Log In</h3>
+                                <h3 class="text-center txt-primary" color-white>{{"logIn" | translate}}</h3>
                             </div>
                             <div text-align-center padding-10>
                                 <span class="text-danger" *ngIf="errorMessage">{{errorMessage}}</span>
@@ -16,19 +16,19 @@
 
                             <div class="form-group form-primary">
                                 <mat-form-field width-percent-100 color-white>
-                                    <input matInput formControlName="username" placeholder="Username">
+                                    <input matInput formControlName="username" [placeholder]="'logIn' | translate">
                                 </mat-form-field>
-                                <span class="text-danger" *ngIf="loginForm.get('username').hasError('required') && loginForm.get('username').touched">Username required</span>
+                                <span class="text-danger" *ngIf="loginForm.get('username').hasError('required') && loginForm.get('username').touched">{{"required_field" |translate}}</span>
 
                             </div>
 
                             <div class=" form-primary">
                                 <mat-form-field width-percent-100 color-white>
-                                    <input matInput placeholder="Password" formControlName="password" type="password">
+                                    <input matInput [placeholder]="'password' | translate" formControlName="password" type="password">
                                 </mat-form-field>
-                                <span class="text-danger" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">Password required</span>
+                                <span class="text-danger" *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched">{{"required_field" |translate}}</span>
                             </div>
-                            <div display-block>
+                            <!-- <div display-block>
                                 <div padding-bottom-20 class="text-right float-left" margin-left-15>
                                     <a color-white [routerLink]="['/registration']" class="text-right" font-weight-600 font-size-15> Registration</a>
                                 </div>
@@ -36,13 +36,13 @@
                                     <a color-white [routerLink]="['/forgot']" class="text-right " font-weight-600 font-size-15> Forgot password?</a>
                                 </div>
 
-                            </div>
+                            </div> -->
                         </div>
                         <loading [loading]="loading"></loading>
                         <div class="row m-t-30">
                             <div class="col-md-12" display-flex>
                                 <input type="submit" [disabled]="!loginForm.valid" class="btn button btn-md btn-block waves-light text-center m-b-20" mdbRippleRadius
-                                    value="Log In" (click)="adminLogin()" width-percent-50 margin-auto>
+                                    [value]="'log_in' | translate" (click)="adminLogin()" width-percent-50 margin-auto>
                             </div>
                         </div>
                     </div>

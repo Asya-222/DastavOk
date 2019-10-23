@@ -5,13 +5,13 @@
   <div *ngIf="!checkCountOfProducts">
     <table width-percent-95 margin-top-10>
       <tr background-green color-white style="height: 40px">
-        <th text-align-left>Name of dish</th>
-        <th>Price</th>
-        <th>View</th>
-        <th>IsActive</th>
-        <th>Settings</th>
-        <th>Hide</th>
-        <th>Delete</th>
+        <th text-align-left>{{"products.adding_product.name_of_dish" | translate}}</th>
+        <th>{{'price' | translate}}</th>
+        <th>{{"products.view" | translate}}</th>
+        <th>{{"products.isActive" | translate}}</th>
+        <th>{{"products.setting" | translate}}</th>
+        <th>{{"products.hide" | translate}}</th>
+        <th>{{'delete' | translate}}</th>
       </tr>
       <tr *ngFor="let data of showDishes" [ngClass]="{'disable' : !data.isActive}">
         <td>{{data.name}}</td>
@@ -38,7 +38,7 @@
   </div>
   <div *ngIf="checkCountOfProducts" margin-top-15 width-percent-95>
     <div display-flex>
-      <h3 margin-auto>{{checkCountOfProducts}}</h3>
+      <h3 margin-auto>{{checkCountOfProducts | translate}}</h3>
     </div>
   </div>
   <loading-full-screen [loading]="loading"></loading-full-screen>

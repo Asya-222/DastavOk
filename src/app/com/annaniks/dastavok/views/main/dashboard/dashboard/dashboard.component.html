@@ -5,7 +5,7 @@
                 <div class="card bg-c-red text-white widget-visitor-card">
                     <div class="card-block-small text-center">
                         <h2>{{dashboardData?.amount}}</h2>
-                        <h6>Итого</h6>
+                        <h6>{{"dashboard.total_amount" | translate }}</h6>
                         <i class="fas fa-money-check-alt"></i>
                    </div>
                 </div>
@@ -14,7 +14,7 @@
                 <div class="card bg-c-blue text-white widget-visitor-card">
                     <div class="card-block-small text-center">
                         <h2>{{dashboardData?.startCount}}</h2>
-                        <h6>Все заказы </h6>
+                        <h6>{{"dashboard.all_orders" | translate }}</h6>
                         <i class="fas fa-clipboard-list"></i>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="card bg-c-yellow text-white widget-visitor-card">
                     <div class="card-block-small text-center">
                         <h2>{{dashboardData?.acceptedCount}}</h2>
-                        <h6>Завершенные заказы</h6>
+                        <h6>{{"dashboard.completed_orders" | translate }}</h6>
                         <i class="fas fa-clipboard-check"></i>
                     </div>
                 </div>

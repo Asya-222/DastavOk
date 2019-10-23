@@ -35,7 +35,7 @@ export class OrdersComponent implements OnInit{
                 console.log("orders",data)
                 this.loading = false;
                 if (data.message.count == 0){
-                    this.messageForCheckOrdersList = "There is nothing here"
+                    this.messageForCheckOrdersList = "there_is_nothing_there"
                 }else{
                     this.messageForCheckOrdersList = undefined
                 }

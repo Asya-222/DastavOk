@@ -2,10 +2,10 @@
 
     <table width-percent-95 margin-top-50 *ngIf="countOfHideDishes != 0" >
       <tr background-green color-white style="height: 40px">
-        <th text-align-left>Name of dish</th>
-        <th>Price</th>
-        <th>View</th>
-        <th>Unhide</th>
+        <th text-align-left>{{"products.adding_product.name_of_dish" | translate}}</th>
+        <th>{{'price' | translate}}</th>
+        <th>{{"products.view" | translate}}</th>
+        <th>{{"restore" | translate}}</th>
       </tr>
       <tr *ngFor="let data of hideDishes">
         <td>{{data.name}}</td>
@@ -21,7 +21,7 @@
 
   <div *ngIf="countOfHideDishes == 0">
     <div display-flex>
-      <h3 margin-auto>There is nothing here</h3>
+      <h3 margin-auto>{{"there_is_nothing_there" | translate}}</h3>
     </div>
   </div>
   <loading-full-screen [loading]="loading"></loading-full-screen>

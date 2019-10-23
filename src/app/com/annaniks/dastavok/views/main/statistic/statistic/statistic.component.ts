@@ -23,7 +23,7 @@ export class StatisticComponent implements OnInit {
             labels: [],
             datasets: [
                 {
-                    label: 'Все заказы',
+                    label: "Все заказы",
                     data: [],
 
                 }

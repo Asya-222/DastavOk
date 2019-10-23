@@ -4,22 +4,22 @@
         <div class="card-block">
             <div>
                 <div margin-bottom-25>
-                    <h3 class="text-center txt-primary" project-color-green>Edit datas</h3>
+                    <h3 class="text-center txt-primary" project-color-green>{{"edit_datas" | translate}}</h3>
                 </div>
             </div>
             <div class=" form-primary ">
                 <mat-form-field width-percent-100>
-                    <input matInput formControlName="name" placeholder="Name of dish">
+                    <input matInput formControlName="name" [placeholder]="'products.adding_product.name_of_dish' | translate">
                 </mat-form-field>
             </div>
             <div class="form-primary ">
                 <mat-form-field width-percent-100>
-                    <input matInput formControlName="price" placeholder="Price">
+                    <input matInput formControlName="price" [placeholder]="'price' | translate">
                 </mat-form-field>
             </div>
             <div class="DishTypeId ">
                 <mat-form-field width-percent-100>
-                    <mat-select placeholder="Type of dish" formControlName="dishTypeId">
+                    <mat-select placeholder="'products.adding_product.type_of_dish' | translate" formControlName="dishTypeId">
                         <mat-option *ngFor="let type of dishTypes" [value]="type.id">{{type.name}}</mat-option>
 
                     </mat-select>
@@ -27,17 +27,17 @@
             </div>
             <div class="form-group form-primary ">
                 <mat-form-field width-percent-100>
-                    <input matInput formControlName="readTime" placeholder="Duration of cooking">
+                    <input matInput formControlName="readTime" [placeholder]="'products.adding_product.duration_of_cooking' | translate">
                 </mat-form-field>
             </div>
             <div class=" form-primary ">
                 <mat-form-field  display-block>
-                    <textarea rows="2" cols="50" matInput width-percent-100 formControlName="description" placeholder="Description"> </textarea>
+                    <textarea rows="2" cols="50" matInput width-percent-100 formControlName="description" [placeholder]="'products.adding_product.description' | translate"> </textarea>
                 </mat-form-field>
             </div>
             <div class="form-group form-primary ">
                 <div>
-                    <mat-checkbox formControlName="isDeal">With discount</mat-checkbox>
+                    <mat-checkbox formControlName="isDeal">{{'products.adding_product.with_discount' | translate}}</mat-checkbox>
                 </div>
             </div>
             
@@ -48,7 +48,7 @@
         
         <div width-percent-50 margin-auto>
             <input  type="submit" class="btn btn-primary btn-md waves-light text-center m-b-20" mdbRippleRadius
-               (click) = "editDatasOfThisDish()" value="Save" width-percent-100 margin-10-auto margin-auto>
+               (click) = "editDatasOfThisDish()" [value]="'save' | translate " width-percent-100 margin-10-auto margin-auto>
         </div>
 
     </div>

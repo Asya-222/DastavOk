@@ -51,7 +51,7 @@ export class ProductsComponent implements OnInit {
             map((data: ServerResponse<number>) => {
                 this.countOfDishesForShow = data.message;
                 if(data.message == 0){
-                    this.checkCountOfProducts = "There is nothing here"
+                    this.checkCountOfProducts = "there_is_nothing_there"
                 }else{
                     this.checkCountOfProducts = undefined
                 }

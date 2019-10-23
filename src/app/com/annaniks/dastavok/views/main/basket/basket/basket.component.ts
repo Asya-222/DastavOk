@@ -18,7 +18,6 @@ export class BasketComponent implements OnInit {
     public loading: boolean = false;
     public limit: number = 10;
     public page: number = 1;
-    public checkBeOrNOtHideDishes: string = 'There is nothing here';
     constructor(private _basketService: BasketService, private dialog: MatDialog, private _productsService: ProductsService) { }
     ngOnInit() {
         this.getDishes()

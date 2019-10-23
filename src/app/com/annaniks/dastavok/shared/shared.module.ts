@@ -8,11 +8,12 @@ import {GalleriaModule} from 'primeng/galleria';
 import { AddToppingModal, EditPasswordModal, ViewDetailsOfDishModal } from '../modals';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OnlyNumber } from '../directives';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
     declarations: [OnlyNumber,LoadingFullScreenComponent,HeaderComponent,MenuComponent,FooterComponent,LoadingComponent,PaginatorComponent,AddToppingModal,EditPasswordModal,ViewDetailsOfDishModal],
-    imports: [CommonModule,RouterModule,ChartModule,MaterialModule,GalleriaModule,ReactiveFormsModule],
-    exports: [OnlyNumber,LoadingFullScreenComponent,HeaderComponent,CommonModule,MenuComponent,FooterComponent,ChartModule,LoadingComponent,PaginatorComponent,GalleriaModule,ViewDetailsOfDishModal,AddToppingModal,EditPasswordModal],
+    imports: [TranslateModule,CommonModule,RouterModule,ChartModule,MaterialModule,GalleriaModule,ReactiveFormsModule],
+    exports: [TranslateModule,OnlyNumber,LoadingFullScreenComponent,HeaderComponent,CommonModule,MenuComponent,FooterComponent,ChartModule,LoadingComponent,PaginatorComponent,GalleriaModule,ViewDetailsOfDishModal,AddToppingModal,EditPasswordModal],
     entryComponents: [AddToppingModal,EditPasswordModal,ViewDetailsOfDishModal]
 })
 export class SharedModule { }

@@ -5,47 +5,47 @@ import { MenuItem } from '../models/models';
 export class MenuItemsService {
     private _menuItems: Array<MenuItem> = [
         {
-            label: "Доска",
+            label: "menu.dashboard",
             routerLink: "/dashboard",
             icon: "fas fa-file-invoice"
         },
         {
-            label: "Статистика",
+            label: "menu.statistic",
             routerLink: "/statistic",
             icon: "fas fa-chart-area"
         },
         {
-            label: "Настройки",
+            label: "menu.settings",
             routerLink: "/settings",
             icon: "fas fa-cogs"
         },
         {
-            label: "Продукты",
+            label: "menu.products",
             routerLink: "/products",
             icon: "fas fa-utensils",
         },
         {
-            label: "Заказы",
+            label: "menu.orders",
             routerLink: "/orders/start",
             icon: "fas fa-file-alt"
         },
         {
-            label: "Принятые заказы",
+            label: "menu.accepted_orders",
             routerLink: "/orders/accepted",
             icon: "fas fa-list-alt"
         },
         {
-            label: "Заказы в процессе",
+            label: "menu.made_orders",
             routerLink: "/orders/maked",
             icon: "fas fa-cookie-bite"
         },
         {
-            label: "Заказы в пути",
+            label: "menu.onway_orders",
             routerLink: "/orders/onway",
             icon: "fas fa-truck-moving"
         },
         {
-            label: "Архив",
+            label: "menu.archive",
             routerLink: "/basket",
             icon: "fas fa-archive"
         }

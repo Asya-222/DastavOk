@@ -16,31 +16,31 @@
         </div>
     </div>
     <div display-flex margin-top-15>
-        <label project-color-green font-weight-bold>Date of creation:</label>
+        <label project-color-green font-weight-bold>{{"viewing_details_of_dish.date_of_creation" | translate}}:</label>
         <div>
             <span margin-left-10>{{createdAt}}</span>
         </div>
     </div>
     <div display-flex>
-        <label project-color-green font-weight-bold>Description:</label>
+        <label project-color-green font-weight-bold>{{"description" | translate}}:</label>
         <div style="max-width: calc(100% - 91px);">
             <span style="display: block; word-wrap: break-word;" margin-left-10>{{data.item.description}}</span>
         </div>
     </div>
     <div display-flex>
-        <label project-color-green font-weight-bold>Price:</label>
+        <label project-color-green font-weight-bold>{{"price" | translate}}:</label>
         <div>
             <span margin-left-10>{{data.item.price}}</span>
         </div>
     </div>
     <div display-flex>
-        <label project-color-green font-weight-bold>Date of update:</label>
+        <label project-color-green font-weight-bold>{{"viewing_details_of_dish.date_of_update" | translate}}:</label>
         <div>
             <span margin-left-10>{{updatedAt}}</span>
         </div>
     </div>
     <div width-percent-100 margin-bottom-5>
-        <label project-color-green font-weight-bold>Images:</label>
+        <label project-color-green font-weight-bold>{{"viewing_details_of_dish.images" | translate}}:</label>
         <div class="image-upload" *ngIf="data.type === 'product'">
             <label position-relative for="file-inp">
                 <div class="addImage"></div>
@@ -58,7 +58,7 @@
     </div>
 
     <div width-percent-100 *ngIf="data.type === 'product'">
-        <label project-color-green font-weight-bold>Toppings:</label>
+        <label project-color-green font-weight-bold>{{"viewing_details_of_dish.toppings" | translate}}:</label>
         <div class="addTopping" (click)="addTopping()"></div>
         <table>
             <tr *ngFor="let item of toppingsOfThisDish">

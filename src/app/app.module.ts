@@ -7,9 +7,15 @@ import { MenuItemsService, AuthGuard, ApiService } from './com/annaniks/dastavok
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule, MaterialModule } from './com/annaniks/dastavok/shared';
 import { CookieService } from 'angular2-cookie/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {GrowlModule} from 'primeng/growl';
 import { MessageService } from 'primeng/components/common/messageservice';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateService, TranslateModule, TranslateLoader } from '@ngx-translate/core';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent
@@ -24,6 +30,13 @@ import { MessageService } from 'primeng/components/common/messageservice';
     MaterialModule,
     HttpClientModule,
     GrowlModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
     
   ],
   bootstrap: [AppComponent],

@@ -3,7 +3,7 @@
     <div padding-top-20>
         <div display-flex class="top">
             <div>
-                <h3 color-grey>Профиль</h3>
+                <h3 color-grey>{{"settings.profile" | translate}}</h3>
             </div>
             <div>
                 <button margin-0-5 background-green (click)="editProfile()">
@@ -16,7 +16,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Фото:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.photo" | translate}}:</p>
             </div>
          
             <div class="image-upload">
@@ -32,7 +32,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Имя пользователя:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.username" | translate}}:</p>
             </div>
             <div width-percent-40 display-flex>
                 <p margin-auto width-percent-100>{{profileInfo.userName}}</p>
@@ -44,7 +44,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Номер телефона:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.phone_number" | translate}}:</p>
             </div>
             <div width-percent-40 display-flex>
                 <p margin-auto width-percent-100>{{profileInfo.phoneNumber}}</p>
@@ -56,7 +56,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Электронная почта:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.e_mail" | translate}}:</p>
             </div>
             <div width-percent-40 display-flex>
                 <p margin-auto width-percent-100>{{profileInfo.email}}</p>
@@ -68,7 +68,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Адрес:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.address" | translate}}:</p>
             </div>
             <div width-percent-40 display-flex>
                 <p margin-auto width-percent-100>{{profileInfo.address.text}}</p>
@@ -81,7 +81,7 @@
     <div>
         <div display-flex width-percent-95>
             <div width-percent-35 display-flex>
-                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>Почтовый индекс:</p>
+                <p margin-auto-0 font-weight-700 color-grey padding-right-15 font-size-14>{{"settings.zip_code" | translate}}:</p>
             </div>
             <div width-percent-40 display-flex>
                 <p margin-auto width-percent-100>{{profileInfo.zipCode}}</p>

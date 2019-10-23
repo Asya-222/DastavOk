@@ -74,7 +74,7 @@ export class NewProductComponent implements OnInit {
             console.log(this._image)
             this._getImages(this._image, data.message.id, this.readingImages)
         },(err =>{
-            this.errorMessage = "One of the fields entered incorrectly or not completed"
+            this.errorMessage = "input_field_incorrectly"
             
         }))
 

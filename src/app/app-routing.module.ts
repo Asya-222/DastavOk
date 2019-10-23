@@ -11,10 +11,10 @@ const routes: Routes = [
     path: "login",
     loadChildren: "src/app/com/annaniks/dastavok/views/login/login.module#LoginModule"
   },
-  {
-    path: "registration",
-    loadChildren: "src/app/com/annaniks/dastavok/views/registration/registration.module#RegistrationModule"
-  },
+  // {
+  //   path: "registration",
+  //   loadChildren: "src/app/com/annaniks/dastavok/views/registration/registration.module#RegistrationModule"
+  // },
   {
     path: "forgot",
     loadChildren: "src/app/com/annaniks/dastavok/views/forgot/forgot.module#ForgotModule"

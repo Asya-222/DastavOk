@@ -1,7 +1,8 @@
 <div position-relative>
-    <div class="filter_bar" style =" margin-top: 40px">
+    <div class="filter_bar" style =" margin-top: 40px;display: -webkit-inline-box;">
         <p-calendar  [placeholder]="'statistic.calendar_placeholder' | translate" [(ngModel)]="rangeDates" (ngModelChange)="onChangeRange($event)" selectionMode="range"
             [readonlyInput]="true" [locale]="ru"></p-calendar>
+            <div class="deleteDate" (click)="deleteDate()" *ngIf = "rangeDates"></div>
     </div>
     <div  class="row"  style =" margin-top: 10px">
         <p-chart type="line" [data]="ordersChartData" width="115%" height="300px" class="col-md-10 col-sm-10 col-lg-10"></p-chart>

@@ -149,6 +149,10 @@ export class StatisticComponent implements OnInit {
             }
         }
     }
+    deleteDate() {
+        this.rangeDates = undefined;
+        this._getStatistics(new Date(), 7)
+      }
     ngOnDestroy() {
         this._subscription.unsubscribe();
     }

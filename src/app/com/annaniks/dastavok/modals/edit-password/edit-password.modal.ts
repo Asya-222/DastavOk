@@ -63,6 +63,11 @@ export class EditPasswordModal implements OnInit {
             console.log("change password", data);
             this.passwordDialogRef.close(true);
             this._messagesService.add({ severity: 'success', summary: '', detail: "Пароль изменен" });
+        },err => {
+            console.log("errooorrr");
+            
+            this._messagesService.add({ severity: 'error', summary: '', detail: "errooorrrrr" });
+            
         })
     }
 

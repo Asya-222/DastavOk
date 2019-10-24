@@ -8,3 +8,32 @@
     }
 
 }
+
+.deleteDate{
+    height: 15px;
+    width: 15px;
+    margin: 8px;
+    background-image: url(../../../../../../../../assets/images/close.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer
+}
+
+:host ::ng-deep .ui-datepicker table td > a.ui-state-active {
+    color: #ffffff;
+    background-color: #7db826;
+}
+
+:host ::ng-deep .ui-inputtext:enabled:focus:not(.ui-state-error) {
+    border-color: #7db826;
+    outline: 0 none;
+    box-shadow: none;
+}
+
+:host ::ng-deep .ui-datepicker:not(.ui-state-disabled) .ui-datepicker-header .ui-datepicker-prev:hover {
+    color: #7db826;
+}
+:host ::ng-deep .ui-datepicker:not(.ui-state-disabled) .ui-datepicker-header .ui-datepicker-next:hover {
+    color: #7db826;
+}

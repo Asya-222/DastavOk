@@ -42,7 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   bootstrap: [AppComponent],
   providers: [
     {
-     provide: 'BASE_URL',useValue: 'http://192.168.0.137:10000/'
+     provide: 'BASE_URL',useValue: 'http://annaniks.com:16000/'
     },MenuItemsService, AuthGuard, CookieService, ApiService,MessageService ]
 })
 export class AppModule { }

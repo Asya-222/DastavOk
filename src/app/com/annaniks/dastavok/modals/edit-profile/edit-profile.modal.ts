@@ -133,21 +133,23 @@ export class EditProfileModal implements OnInit {
     private findNearRestaurants(latitude, longitude): void {
         let service;
         let coordinates = new google.maps.LatLng(latitude, longitude);
+        console.log(coordinates,"coordinates");
+        
         let request = {
             location: coordinates,
-            radius: '100',
-            types: ['restaurant', 'supermarket', 'store', 'food', 'storage', 'cafe', 'home_goods_store', "point_of_interest", "establishment", "grocery_or_supermarket"]
+            radius: '50',
+             types: []
         };
         service = new google.maps.places.PlacesService(this.map);
         service.nearbySearch(request, (results, status) => {
             if (status == google.maps.places.PlacesServiceStatus.OK) {
                 let address: string = '';
                 let name: string = '';
-                let zoom: number;
-                address = results[0].name + ' ' + results[0].vicinity;
-                name = results[0].name;
-                this.markerlat = results[0].geometry.location.lat();
-                this.markerlng = results[0].geometry.location.lng();
+                let zoom: number;             
+                address = results[1].name + ' ' + results[1].vicinity;
+                name = results[1].name;
+                this.markerlat = results[1].geometry.location.lat();
+                this.markerlng = results[1].geometry.location.lng();
                 let coordinates = { lat: this.markerlat, lng: this.markerlng };
                 zoom = this.map.getZoom();
                 this.editProfileForm.patchValue({

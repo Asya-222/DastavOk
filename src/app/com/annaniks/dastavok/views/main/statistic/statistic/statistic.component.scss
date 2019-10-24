@@ -37,3 +37,7 @@
 :host ::ng-deep .ui-datepicker:not(.ui-state-disabled) .ui-datepicker-header .ui-datepicker-next:hover {
     color: #7db826;
 }
+
+:host ::ng-deep .ui-inputtext:enabled:hover:not(.ui-state-error) {
+    border-color: #7db826;
+}

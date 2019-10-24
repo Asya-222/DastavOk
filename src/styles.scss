@@ -44,3 +44,73 @@ body{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+    caret-color: #909090 !important;
+} 
+  .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #909090 !important;
+}
+ .mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+    background-color: #909090 !important;
+}
+.mat-form-field .mat-focused .mat-form-field-label{
+    background-color: #909090 !important
+}
+ .mat-form-field .mat-focused .mat-form-field-label .ng-touched{
+    background-color: #909090 !important
+}
+ mat-form-field .mat-form-field .ng-tns-c2-0 .mat-primary .mat-form-field-type-mat-input .mat-form-field-appearance-legacy .mat-form-field-can-float .mat-form-field-hide-placeholder .ng-touched .ng-dirty .mat-form-field-should-float .ng-valid .mat-focused{
+    background-color: #909090 !important
+}
+ .mat-form-field-label .ng-tns-c2-0 .ng-star-inserted .mat-empty .mat-form-field-empty{
+    background-color: #909090 !important;
+}
+ mat-form-field{
+    .mat-form-field-wrapper{
+        .mat-form-field-flex{
+            .mat-form-field-infix{
+                .mat-form-field-label-wrapper{
+                    .mat-form-field-label .ng-tns-c2-0 .ng-star-inserted {
+                        background-color: #909090 !important;
+                    }
+
+                }
+            }
+        }
+        .mat-form-field-can-float{
+            color: #909090 !important
+        }
+    }
+
+}
+// taki hast gci guynne
+ .mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: #909090 !important
+}
+
+
+
+    .mat-input-element{
+        caret-color:#909090;
+    }
+    .mat-form-field-outline-thick{
+        color:#909090 !important;
+    }
+    .mat-form-field-label{
+        color:#909090 !important;
+    }
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #909090
+}
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #7db826;
+}
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: #909090;
+}
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: #7db826;
+}

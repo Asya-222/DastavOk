@@ -43,6 +43,12 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     {
       provide: 'BASE_URL', useValue: 'http://annaniks.com:16000/'
-    }, MenuItemsService, AuthGuard, CookieService, ApiService, MessageService]
+    },
+    MenuItemsService,
+    AuthGuard,
+    CookieService,
+    ApiService,
+    MessageService
+  ]
 })
 export class AppModule { }

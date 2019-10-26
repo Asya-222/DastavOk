@@ -8,10 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule, MaterialModule } from './com/annaniks/dastavok/shared';
 import { CookieService } from 'angular2-cookie/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import {GrowlModule} from 'primeng/growl';
+import { GrowlModule } from 'primeng/growl';
 import { MessageService } from 'primeng/components/common/messageservice';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import { TranslateService, TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -37,12 +37,12 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     })
-    
+
   ],
   bootstrap: [AppComponent],
   providers: [
     {
-     provide: 'BASE_URL',useValue: 'http://192.168.0.137:10000/'
-    },MenuItemsService, AuthGuard, CookieService, ApiService,MessageService ]
+      provide: 'BASE_URL', useValue: 'http://annaniks.com:16000/'
+    }, MenuItemsService, AuthGuard, CookieService, ApiService, MessageService]
 })
 export class AppModule { }

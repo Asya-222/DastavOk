@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
         },(err)=> {
             this.loading = false;
             this.loginForm.enable();
-            this.errorMessage = "Օne of the fields entered incorrectly, please try again"  
+            this.errorMessage = "products.adding_product.input_field_incorrectly"  
         })
     }
 

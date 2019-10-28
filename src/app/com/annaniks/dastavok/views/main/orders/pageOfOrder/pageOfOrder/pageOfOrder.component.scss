@@ -53,7 +53,7 @@
 .next{
     background-color: #7db826;
     height: 40px;
-    width: 200px;
+    width: auto;
     font-weight: 600
 }
 .next:hover{
@@ -63,7 +63,7 @@
     margin: 30px 0px;
 }
 .cardOfInfoOfDish{
-    padding: 0px 30px;
+    padding: 0px 15px;
     margin:  10px auto;
     color: white
 }
@@ -75,6 +75,7 @@
         position: absolute;
         right: 0;
         top: 20px;
+        padding: 0px 15px;
     }
  }
  .hovereffect {

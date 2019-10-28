@@ -42,6 +42,8 @@ export class PageOfOrderComponent implements OnInit {
     public getOrder(id: string) {
         this._ordersService.getOrder(id).subscribe((data: ServerResponse<OneOrder>) => {
             this.order = data.message
+            console.log(this.order, "orderiiiiiiiiikkkkk");
+            
             this.orderGoods = data.message.goods;
             var contentString = '<div id="content">' +
                 '<div id="bodyContent" style="margin-top: 20px">' +
@@ -51,8 +53,8 @@ export class PageOfOrderComponent implements OnInit {
                 '<p><b style="font-weight: bold">Phone number: </b> ' + data.message.client.clientphonenumber + '</p>' +
                 '</div>' +
                 '</div>';
-            this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, { lat: data.message.client.clientaddress[0].lat, lng: data.message.client.clientaddress[0].lng }, contentString)
-
+            // this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, { lat: data.message.client.clientaddress[0].lat, lng: data.message.client.clientaddress[0].lng }, contentString)
+            this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, {  lat: data.message.address.lat, lng: data.message.address.lng }, contentString)
         })
     }
     public _initMap(corrdinates, coordinatesOfClient, contentString, zoom = 8) {

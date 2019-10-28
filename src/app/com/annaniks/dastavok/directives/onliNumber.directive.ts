@@ -52,13 +52,13 @@ export class OnlyNumber {
         this.inputElement.focus();
         document.execCommand('insertText', false, textData);
     }
-    @HostListener('input', ['$event'])
-    onBlurInput(event) {
-      console.log(event);
+    // @HostListener('input', ['$event'])
+    // onBlurInput(event) {
+    //   console.log(event);
       
-        event.preventDefault();
-        const textData = event.target.value.replace(/\D/g, '');
-        this.inputElement.focus();
-        document.execCommand('insertText', false, textData);
-    }
+    //     event.preventDefault();
+    //     const textData = event.target.value.replace(/\D/g, '');
+    //     this.inputElement.focus();
+    //     document.execCommand('insertText', false, textData);
+    // }
 }

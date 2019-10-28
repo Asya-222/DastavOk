@@ -6,7 +6,7 @@ import { LoginRoutingModule } from "./login-routing.module";
 import { LoginComponent } from "./login/login.component";
 import { SharedModule, MaterialModule } from "../../shared";
 import { ApiService } from "../../services";
-import { CookieService } from "angular2-cookie/services/cookies.service";
+import { CookieService } from "ngx-cookie-service";
 import { HttpClientModule } from '@angular/common/http';
 import { ServerRequests } from "../../services/serverRequests.service";
 import { LoadingComponent } from "../../components";

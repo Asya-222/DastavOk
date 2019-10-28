@@ -114,3 +114,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
     background: #7db826;
 }
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-ripple-element {
+    background-color: #7eb8264b;
+}
+.mat-form-field .mat-select.mat-select-invalid .mat-select-arrow {
+    color: #909090;
+}

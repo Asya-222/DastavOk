@@ -12,7 +12,7 @@
             </div>
             <div class="form-group">
                 <label font-weight-bold project-color-green>{{"products.adding_product.main_photo_of_dish" | translate}}:</label>
-                <div>
+                <div padding-bottom-10>
                     <img [ngStyle]="{'background-image': 'url('+ localImage +')'}" class="img">
                 </div>
                 <input type="file" style="cursor: pointer" formControlName="chooseImg" (change)="photoUpload($event)">
@@ -20,9 +20,11 @@
             </div>
             <div class="form-group">
                 <label font-weight-bold project-color-green>{{"products.adding_product.other_photos_of_dish" | translate}}:</label>
-                <div display-flex>
-                    <product-photos [item]="img" [index]="i" *ngFor="let img of localImages; let i = index" (changeEvent)="changedImage($event)"
+                <div  display-flex style = "width: 85%">
+                    <div  class = "row"  style = "width: 100%;margin-left: -5px">
+                    <product-photos class = "col-lg-2 col-sm-1 col-md-1" [item]="img" [index]="i" *ngFor="let img of localImages; let i = index" (changeEvent)="changedImage($event)"
                         (deleteEvent)="deleteChoosingPhoto($event)"></product-photos>
+                    </div>
                 </div>
 
                 <input type="file" style="cursor: pointer" formControlName="chooseImgs" multiple='multiple' (change)="multiTypeUpload($event)">

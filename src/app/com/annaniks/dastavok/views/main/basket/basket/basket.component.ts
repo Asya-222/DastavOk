@@ -72,7 +72,7 @@ export class BasketComponent implements OnInit {
                 item: item,
                 type: "basket"
             },
-            panelClass: ["boxShadow"]
+            panelClass: ['boxShadow','modalOfEditingProfile']
         })
     }
     public clickHide(item: ProductInfo): void {

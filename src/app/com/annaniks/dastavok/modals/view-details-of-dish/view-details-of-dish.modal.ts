@@ -89,7 +89,7 @@ export class ViewDetailsOfDishModal implements OnInit {
     }
 
 
-    public editTopping(item) {
+    public editTopping(item):void{
         const dialogRef = this.dialog.open(AddToppingModal, {
             width: '400px',
             data: {

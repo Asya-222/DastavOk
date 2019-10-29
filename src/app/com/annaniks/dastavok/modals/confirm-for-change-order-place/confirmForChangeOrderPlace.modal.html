@@ -1,9 +1,9 @@
 <div class="content">
     <div class="container">
-        <p text-align-center>Do you confirm this operation ?</p>
+        <p text-align-center>{{"confirm_or_not_question" | translate}}</p>
         <div class="buttons">
-            <input type="submit" class="confirm" value="Yes" (click)="onClickYes()">
-            <input type="submit" class="reject" value="No" (click)="onClickNo()">
+            <input type="submit" class="confirm" [value]="'yes' | translate" (click)="onClickYes()">
+            <input type="submit" class="reject" [value]="'no' | translate" (click)="onClickNo()">
         </div>
     </div>
 </div>

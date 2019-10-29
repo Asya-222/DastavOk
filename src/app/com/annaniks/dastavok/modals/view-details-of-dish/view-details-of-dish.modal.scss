@@ -111,3 +111,8 @@ label{
     padding-right: 8px !important;
     padding-left: 8px !important;
 }
+
+:host ::ng-deep .mat-dialog-container {
+   
+    overflow-y: hidden;
+}

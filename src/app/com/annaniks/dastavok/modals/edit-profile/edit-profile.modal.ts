@@ -32,6 +32,7 @@ export class EditProfileModal implements OnInit {
         this._setProfileInfo();
         this._initMap();
         this.getAllTypes()
+        
 
     }
 
@@ -178,7 +179,6 @@ export class EditProfileModal implements OnInit {
     }
     public deleteType(id):void {
         this._settingsService.deleteTypeById(id).subscribe((data: ServerResponse<string>) => {
-            console.log("deleted", data);
             this._messagesService.add({ severity: 'success', summary: '', detail: "Deleted" });
             this.getAllTypes()
         })

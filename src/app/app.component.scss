@@ -1,0 +1,29 @@
+:host ::ng-deep .ui-growl-icon-close{
+    color: rgba(255, 255, 255, 0.938) !important;
+}
+
+:host ::ng-deep .ui-growl-message-success{
+    background-color: #7eb826e5 !important;
+ }
+ :host ::ng-deep  .ui-growl-message-error{
+    background-color: rgba(255, 0, 0, 0.911) !important;
+ }
+ :host ::ng-deep .ui-growl-message{
+    
+    color: rgba(255, 255, 255, 0.938) !important;
+    p{
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: -10px;
+    }
+ }
+
+ :host ::ng-deep .pi-check{
+    color: rgba(255, 255, 255, 0.938) !important;
+        margin-top: 3px;
+   }
+ :host ::ng-deep .pi-times{
+    color: rgba(255, 255, 255, 0.938) !important;
+    margin-top: 6px;
+   }
+ 

@@ -42,8 +42,6 @@ export class PageOfOrderComponent implements OnInit {
     public getOrder(id: string) {
         this._ordersService.getOrder(id).subscribe((data: ServerResponse<OneOrder>) => {
             this.order = data.message
-            console.log(data.message.goods, "orderiiiiiiiiikkkkk");
-            
             this.orderGoods = data.message.goods;
             var contentString = '<div id="content">' +
                 '<div id="bodyContent" style="margin-top: 20px">' +
@@ -106,8 +104,7 @@ export class PageOfOrderComponent implements OnInit {
         })
         dialogRef.afterClosed().subscribe((result) => {
             if (result) {
-                this.changeOrder();
-
+                this.changeOrder()
             }
         })
     }

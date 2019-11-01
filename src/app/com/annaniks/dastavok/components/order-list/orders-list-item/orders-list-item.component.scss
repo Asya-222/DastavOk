@@ -32,7 +32,7 @@
     .hovereffect .img {
     display:block;
     position:relative;
-    opacity: 0.8;
+    opacity: 0.88;
     -webkit-transition:all .4s linear;
     transition:all .4s linear;
     }
@@ -45,10 +45,10 @@
         font-size: 17px;
         padding: 10px;
         margin-top: 20px;
-        background: rgba(26, 26, 26, 0.6);
-        -webkit-transform: translateY(45px);
-        -ms-transform: translateY(45px);
-        transform: translateY(45px);
+        background: rgba(26, 26, 26, 0.42);
+        // -webkit-transform: translateY(45px);
+        // -ms-transform: translateY(45px);
+        // transform: translateY(45px);
         -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
         transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
       }

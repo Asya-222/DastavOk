@@ -84,7 +84,12 @@ export class ViewDetailsOfDishModal implements OnInit {
         this._productsService.deleteToppingWithView(id).subscribe((data: ServerResponse<number>) => {
             this.loading = false
             this.getToppingsOfThisDish();
-            this._messageService.add({ severity: 'success', summary: '', detail: "Deleted" })
+            this._messageService.add({ severity: 'success', summary: '', detail: "Удаленный" })
+        },(err) => {        
+            if(err.status == 403){
+                this.loading = false;
+                this._messageService.add({ severity: 'error', summary: '', detail: "Вы не можете выполнить эту задачу,пока она находится в списке заказов" })
+            }
         })
     }
 

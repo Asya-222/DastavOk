@@ -36,10 +36,10 @@ export class LoginComponent implements OnInit {
             Password: this.loginForm.value.password
         }
         this._loginService.login(sendingData).subscribe((data: ServerResponse<TypeToken>) => {
-            // this._cookieService.put("c_token", data.message.token);
-            // this._cookieService.put("c_refreshToken", data.message.refreshToken);
-            this._cookieService.set( 'c_token', data.message.token,2);
-            this._cookieService.set("c_refreshToken", data.message.refreshToken,2);
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 2);
+            this._cookieService.set( 'c_token', data.message.token, expireDate);
+            this._cookieService.set("c_refreshToken", data.message.refreshToken, expireDate);
             this._router.navigate(["/dashboard"])
             this.loading = false;
             this.loginForm.enable();

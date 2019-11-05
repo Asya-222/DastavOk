@@ -38,7 +38,8 @@ export class SettingsOfDishModal implements OnInit {
             description: ['', Validators.required],
             dishTypeId: [[], Validators.required],
             readTime: ['', Validators.required],
-            isDeal: [false]
+            isDeal: [false],
+            slider: [false]
 
         })
     }
@@ -61,6 +62,7 @@ export class SettingsOfDishModal implements OnInit {
                 dishTypeId: this.data.goodTypeId,
                 readTime: this.data.readyTime,
                 isDeal :  this.data.isDeal,
+
             })
 
         }
@@ -74,7 +76,8 @@ export class SettingsOfDishModal implements OnInit {
             description: this.editProductForm.value.description,
             typesId: +this.editProductForm.value.dishTypeId,
             readyTime: +this.editProductForm.value.readTime,
-            isDeal: this.editProductForm.value.isDeal
+            isDeal: this.editProductForm.value.isDeal,
+            slider: this.editProductForm.value.slider
         }
         this._productService.editDatasOfDish(this.data.id,sendingData).subscribe((data:ServerResponse<Array<any>>) => {
             this.loading = false;

@@ -184,6 +184,7 @@ export interface EdittingDatasOfDish {
     price: number;
     description: string;
     isDeal: boolean;
+    slider:boolean;
     typesId: number;
     readyTime: number;
 }

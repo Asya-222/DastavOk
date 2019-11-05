@@ -23,7 +23,6 @@ export class OrdersListItemComponent implements OnInit{
 
     private _navigateToOrderDetails(id:number): void {
         let status:string = this.infoAboutOrder.status;
-        debugger;
         if (status === 'start' || status === 'accepted' || status === 'on-way' || status === 'maked' || status === 'completed') {
             this._router.navigate([`/orders/${status}/${id}`])
         }

@@ -3,7 +3,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { RegisterItems, ServerResponse, TypeToken } from '../../models/models';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RegistrationService } from '../../views/registration/registration.service';
-import { CookieService } from 'angular2-cookie/services/cookies.service';
+import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -41,8 +41,10 @@ export class ConfirmModal implements OnInit {
         }).subscribe((data: ServerResponse<TypeToken>) => {
             this.loading = false;
             this.confirmForm.enable();
-            this._cookieService.put("c_token", data.message.token);
-            this._cookieService.put("c_refreshToken", data.message.refreshToken);
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 2);
+            this._cookieService.set("c_token", data.message.token,expireDate);
+            this._cookieService.set("c_refreshToken", data.message.refreshToken,expireDate);
             this._router.navigate(["/dashboard"])
             this.dialogRef.close();
         }, (err) => {

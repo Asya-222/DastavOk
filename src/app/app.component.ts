@@ -18,7 +18,7 @@ export class AppComponent {
       translate.use('ru');
     }
     translate.setDefaultLang('ru');
-    this._router.navigate(["/dashboard"])
+    // this._router.navigate(["/dashboard"])
   }
   
 }

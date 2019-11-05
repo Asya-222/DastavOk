@@ -51,8 +51,8 @@ export class PageOfOrderComponent implements OnInit {
                 '<p><b style="font-weight: bold">Phone number: </b> ' + data.message.client.clientphonenumber + '</p>' +
                 '</div>' +
                 '</div>';
-            this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, { lat: data.message.client.clientaddress[0].lat, lng: data.message.client.clientaddress[0].lng }, contentString)
-
+            // this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, { lat: data.message.client.clientaddress[0].lat, lng: data.message.client.clientaddress[0].lng }, contentString)
+            this._initMap({ lat: data.message.address.lat, lng: data.message.address.lng }, {  lat: data.message.address.lat, lng: data.message.address.lng }, contentString)
         })
     }
     public _initMap(corrdinates, coordinatesOfClient, contentString, zoom = 8) {
@@ -104,8 +104,7 @@ export class PageOfOrderComponent implements OnInit {
         })
         dialogRef.afterClosed().subscribe((result) => {
             if (result) {
-                this.changeOrder();
-
+                this.changeOrder()
             }
         })
     }

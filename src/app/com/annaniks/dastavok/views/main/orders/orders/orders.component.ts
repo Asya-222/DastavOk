@@ -17,7 +17,7 @@ import { copyStyles } from '../../../../../../../../../node_modules/@angular/ani
 export class OrdersComponent implements OnInit{
     public loading: boolean = false;
     public messageForCheckOrdersList: string = undefined;
-    public limit: number = 6;
+    public limit: number = 9;
     public countOfOrders: number = 0;
     public orderList : Array<object> = [];
     private _orderStatus: string;
@@ -60,7 +60,7 @@ export class OrdersComponent implements OnInit{
         this._orderStatus = undefined;
         this.orderList = [];
         this.countOfOrders = 0;
-        this.limit = 6;
+        this.limit = 9;
         this.messageForCheckOrdersList = undefined
     }
 }

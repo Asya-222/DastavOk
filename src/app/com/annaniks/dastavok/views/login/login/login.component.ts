@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../login.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { CookieService } from 'angular2-cookie/services/cookies.service';
 import { Router } from '@angular/router';
 import { ServerResponse, TypeToken, LoginItems } from '../../../models/models';
-
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
     selector: 'login',
@@ -37,8 +36,10 @@ export class LoginComponent implements OnInit {
             Password: this.loginForm.value.password
         }
         this._loginService.login(sendingData).subscribe((data: ServerResponse<TypeToken>) => {
-            this._cookieService.put("c_token", data.message.token);
-            this._cookieService.put("c_refreshToken", data.message.refreshToken);
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() + 2);
+            this._cookieService.set( 'c_token', data.message.token, expireDate);
+            this._cookieService.set("c_refreshToken", data.message.refreshToken, expireDate);
             this._router.navigate(["/dashboard"])
             this.loading = false;
             this.loginForm.enable();

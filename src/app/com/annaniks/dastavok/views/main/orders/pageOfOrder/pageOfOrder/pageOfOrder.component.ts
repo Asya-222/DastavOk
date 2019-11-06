@@ -42,6 +42,8 @@ export class PageOfOrderComponent implements OnInit {
     public getOrder(id: string) {
         this._ordersService.getOrder(id).subscribe((data: ServerResponse<OneOrder>) => {
             this.order = data.message
+            console.log(this.order, "orderrrrrr gettt");
+            
             this.orderGoods = data.message.goods;
             var contentString = '<div id="content">' +
                 '<div id="bodyContent" style="margin-top: 20px">' +

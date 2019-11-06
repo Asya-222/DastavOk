@@ -39,7 +39,8 @@ export class NewProductComponent implements OnInit {
             description: ['', Validators.required],
             dishTypeId: [[], Validators.required],
             readTime: ['', Validators.required],
-            isDeal: [false]
+            isDeal: [false],
+            slider: [false]
 
         })
     }
@@ -68,7 +69,8 @@ export class NewProductComponent implements OnInit {
             isDeal: this.addProductForm.value.isDeal,
             goodTypeId: +this.addProductForm.value.dishTypeId,
             readyTime: +this.addProductForm.value.readTime,
-            toppings: this.toppings
+            toppings: this.toppings,
+            is_slider: this.addProductForm.value.slider
         }
         this._newProductService.addDish(sendingData).subscribe((data: ServerResponse<NewDishData>) => {
             console.log(this._image)

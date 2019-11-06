@@ -76,7 +76,8 @@
         "duration_of_cooking": "Срок приготовления",
         "description": "Oписание",
         "topping": "Добавить ингредиенты",
-        "with_discount":"Со скидкой"
+        "with_discount":"Со скидкой",
+        "in_slider": "Показать в слайдере"
       }
     },
     "adding_topping": {

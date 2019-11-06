@@ -84,6 +84,7 @@ export interface AddNewDish {
     price: number;
     description: string;
     isDeal: boolean;
+    is_slider: boolean;
     goodTypeId: number;
     readyTime: number;
     toppings: Array<object>
@@ -184,7 +185,7 @@ export interface EdittingDatasOfDish {
     price: number;
     description: string;
     isDeal: boolean;
-    slider:boolean;
+    is_slider:boolean;
     typesId: number;
     readyTime: number;
 }

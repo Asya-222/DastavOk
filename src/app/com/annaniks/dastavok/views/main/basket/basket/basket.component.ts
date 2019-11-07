@@ -67,12 +67,11 @@ export class BasketComponent implements OnInit {
     public seeDetailsOfDish(item: ProductInfo): void {
         const dialogRef = this.dialog.open(ViewDetailsOfDishModal, {
             width: '600px',
-            height: '650px',
             data: {
                 item: item,
                 type: "basket"
             },
-            panelClass: ['boxShadow','modalOfEditingProfile']
+            panelClass: ['styleOfBasketModal','modalOfEditingProfile']
         })
     }
     public clickHide(item: ProductInfo): void {

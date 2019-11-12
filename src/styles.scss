@@ -123,6 +123,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .styleOfBasketModal{
-    padding: 50px 0px;
-    height: inherit;
+    max-width: 80vw;
+    max-height: 50vw;
+    pointer-events: auto;
+    height: max-content;
+    position: static;
 }

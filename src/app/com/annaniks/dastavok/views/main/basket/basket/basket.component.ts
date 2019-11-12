@@ -72,6 +72,7 @@ export class BasketComponent implements OnInit {
                 type: "basket"
             },
             panelClass: ['styleOfBasketModal','modalOfEditingProfile']
+            // panelClass: ['modalOfEditingProfile']
         })
     }
     public clickHide(item: ProductInfo): void {

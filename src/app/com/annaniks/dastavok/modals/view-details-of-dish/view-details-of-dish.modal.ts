@@ -174,6 +174,6 @@ export class ViewDetailsOfDishModal implements OnInit {
         this._productsService.deleteProductImagesOfOne(this.data.item.id, this.imagesOfDish[ind]).subscribe((data: ServerResponse<Array<Object>>) => {
         })
         this.imagesOfDish.splice(ind, 1)
-        this._messageService.add({ severity: 'success', summary: '', detail: "Deleted" })
+        this._messageService.add({ severity: 'success', summary: '', detail: "Удалён" })
     }
 }

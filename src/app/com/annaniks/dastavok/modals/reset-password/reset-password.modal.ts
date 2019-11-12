@@ -29,7 +29,7 @@ export class ResetPasswordModal implements OnInit {
         }, { validator: this.matchingPasswords('password', 'repeatPassword') })
         this.resetPassForm.valueChanges.subscribe((data) => {
             if (this.resetPassForm.value.password != this.resetPassForm.value.repeatPassword && this.resetPassForm.get("password").dirty && this.resetPassForm.get("repeatPassword").dirty) {
-                this.matchingPasswordsError = "Passwords don't match"
+                this.matchingPasswordsError = "Пароли не совпадают"
             } else {
                 this.matchingPasswordsError = undefined
             }
@@ -60,7 +60,6 @@ export class ResetPasswordModal implements OnInit {
         this._forgotService.putPassword(sendingData).subscribe((data: any) => {
             this.loading = false;
             this.resetPassForm.enable();
-            console.log("password reseted", data);
             this._messagesService.add({ severity: 'success', summary: '', detail: data.message });
             this.passDialogRef.close(true)
         })

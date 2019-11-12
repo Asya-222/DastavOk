@@ -78,12 +78,11 @@ export class ProductsComponent implements OnInit {
     public seeDetailsOfDish(item: ProductInfo): void {
         const dialogRef = this.dialog.open(ViewDetailsOfDishModal, {
             width: '600px',
-            height: '650px',
             data: {
                 item: item,
                 type: "product"
             },
-            panelClass: 'modalOfEditingProfile'
+            panelClass: ['styleOfBasketModal','modalOfEditingProfile']
         })
         dialogRef.afterClosed().subscribe((result) => {
             this.getDishes()
@@ -103,10 +102,10 @@ export class ProductsComponent implements OnInit {
     public deleteDish(id: number): void {
         this._productsService.deleteDish(id).subscribe((data: ServerResponse<number>) => {
             this.getDishes();
-            this._messagesService.add({ severity: 'success', summary: '', detail: "Deleted" })
+            this._messagesService.add({ severity: 'success', summary: '', detail: "Удалён" })
         }, (err) => {
             if (err.error.data.message == "Permission denied") {
-                this._errorMessageForDeleteDish = "You can't delete this";
+                this._errorMessageForDeleteDish = "Вы не можете удалить это";
             }
             this._messagesService.add({ severity: 'error', summary: '', detail: this._errorMessageForDeleteDish })
 
@@ -124,7 +123,6 @@ export class ProductsComponent implements OnInit {
     public clickHide(item:ProductInfo): void {
         this.loading = true;
         this._productsService.updateHideOrNot(item.id, { isHide: (item.isHide) ? false : true }).subscribe((data: ServerResponse<Array<any>>) => {
-            console.log("mi hat data",data);
             this.loading = false
             this.getDishes()
         })

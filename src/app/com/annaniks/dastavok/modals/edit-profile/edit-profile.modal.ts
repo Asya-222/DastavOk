@@ -179,7 +179,7 @@ export class EditProfileModal implements OnInit {
     }
     public deleteType(id):void {
         this._settingsService.deleteTypeById(id).subscribe((data: ServerResponse<string>) => {
-            this._messagesService.add({ severity: 'success', summary: '', detail: "Deleted" });
+            this._messagesService.add({ severity: 'success', summary: '', detail: "Удалён" });
             this.getAllTypes()
         })
     }

@@ -1,35 +1,64 @@
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import {Directive, ElementRef, HostListener} from '@angular/core';
 
 @Directive({
-  selector: '[OnlyNumber]'
+    selector: '[OnlyNumber]'
 })
 export class OnlyNumber {
+    inputElement: HTMLElement;
 
-  constructor(private el: ElementRef) { }
+    constructor(public el: ElementRef) {
+        this.inputElement = el.nativeElement;
+    }
 
-  @Input() OnlyNumber: boolean;
-
-  @HostListener('keydown', ['$event']) onKeyDown(event) {
-    let e = <KeyboardEvent> event;
-    if (this.OnlyNumber) {
-      if ([46, 8, 9, 27, 13, 110, 190].indexOf(e.keyCode) !== -1 ||
-        // Allow: Ctrl+A
-        (e.keyCode === 65 && (e.ctrlKey || e.metaKey)) ||
-        // Allow: Ctrl+C
-        (e.keyCode === 67 && (e.ctrlKey || e.metaKey)) ||
-        // Allow: Ctrl+V
-        (e.keyCode === 86 && (e.ctrlKey || e.metaKey)) ||
-        // Allow: Ctrl+X
-        (e.keyCode === 88 && (e.ctrlKey || e.metaKey)) ||
-        // Allow: home, end, left, right
-        (e.keyCode >= 35 && e.keyCode <= 39)) {
-          // let it happen, don't do anything
-          return;
+    @HostListener('keydown', ['$event'])
+    onKeyDown(e: KeyboardEvent) {
+        if (
+            [46, 8, 9, 27, 13].indexOf(e.keyCode) !== -1 || // Allow: Delete, Backspace, Tab, Escape, Enter
+            (e.keyCode === 65 && e.ctrlKey === true) || // Allow: Ctrl+A
+            (e.keyCode === 67 && e.ctrlKey === true) || // Allow: Ctrl+C
+            (e.keyCode === 86 && e.ctrlKey === true) || // Allow: Ctrl+V
+            (e.keyCode === 88 && e.ctrlKey === true) || // Allow: Ctrl+X
+            (e.keyCode === 65 && e.metaKey === true) || // Allow: Cmd+A (Mac)
+            (e.keyCode === 67 && e.metaKey === true) || // Allow: Cmd+C (Mac)
+            (e.keyCode === 86 && e.metaKey === true) || // Allow: Cmd+V (Mac)
+            (e.keyCode === 88 && e.metaKey === true) || // Allow: Cmd+X (Mac)
+            (e.keyCode >= 35 && e.keyCode <= 39) // Allow: Home, End, Left, Right
+        ) {
+            // let it happen, don't do anything
+            return;
         }
         // Ensure that it is a number and stop the keypress
-        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        if (
+            (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) &&
+            (e.keyCode < 96 || e.keyCode > 105)
+        ) {
             e.preventDefault();
         }
-      }
-  }
+    }
+
+    @HostListener('paste', ['$event'])
+    onPaste(event: ClipboardEvent) {
+        event.preventDefault();
+        const pastedInput: string = event.clipboardData
+            .getData('text/plain')
+            .replace(/\D/g, ''); // get a digit-only string
+        document.execCommand('insertText', false, pastedInput);
+    }
+
+    @HostListener('drop', ['$event'])
+    onDrop(event) {
+        event.preventDefault();
+        const textData = event.dataTransfer.getData('text').replace(/\D/g, '');
+        this.inputElement.focus();
+        document.execCommand('insertText', false, textData);
+    }
+    @HostListener('input', ['$event'])
+    onBlurInput(event) {
+      console.log(event);
+      
+        event.preventDefault();
+        const textData = event.target.value.replace(/\D/g, '');
+        this.inputElement.focus();
+        document.execCommand('insertText', false, textData);
+    }
 }
